@@ -1,0 +1,27 @@
+# vim: set syntax=sh :
+
+# Dotfile configs required for other parts to work correctly
+#############################################################
+# TODO - dedup this against install.sh
+export DOTFILES=${DOTFILES-${HOME}/dotfiles}
+export DOTFILES_SHELL=$(basename $SHELL)
+#############################################################
+# End mandatory Dotfile configs
+
+function dotfiles_init() {
+  # Load baseline configs that (should) work in all shells
+  source ${DOTFILES}/etc/sh/init.sh
+
+  # Load custom configs for the active shell
+  source ${DOTFILES}/etc/${DOTFILES_SHELL}/init.${DOTFILES_SHELL}
+
+  # Custom dotfiles installer functions
+  source ${DOTFILES}/etc/dotfiles/install-functions.sh
+
+  # Source user-specific tweaks
+  if [ -f ${HOME}/.dotfilesrc_local ]; then
+     source ${HOME}/.dotfilesrc_local
+  fi
+}
+
+dotfiles_init
