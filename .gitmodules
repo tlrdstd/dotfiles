@@ -1,0 +1,93 @@
+[submodule "vim/bundle/Vundle.vim"]
+	path = vim/bundle/Vundle.vim
+	url = ../../VundleVim/Vundle.vim
+[submodule "vim/bundle/CamelCaseMotion"]
+	path = vim/bundle/CamelCaseMotion
+	url = ../../bkad/CamelCaseMotion.git
+[submodule "vim/bundle/ctrlp.vim"]
+	path = vim/bundle/ctrlp.vim
+	url = ../../kien/ctrlp.vim.git
+[submodule "vim/bundle/fonts"]
+	path = vim/bundle/fonts
+	url = ../../powerline/fonts.git
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = ../../scrooloose/nerdtree.git
+[submodule "vim/bundle/supertab"]
+	path = vim/bundle/supertab
+	url = ../../ervandew/supertab.git
+[submodule "vim/bundle/syntastic"]
+	path = vim/bundle/syntastic
+	url = ../../vim-syntastic/syntastic.git
+[submodule "vim/bundle/tabular"]
+	path = vim/bundle/tabular
+	url = ../../godlygeek/tabular.git
+[submodule "vim/bundle/vim-airline"]
+	path = vim/bundle/vim-airline
+	url = ../../vim-airline/vim-airline.git
+[submodule "vim/bundle/vim-airline-themes"]
+	path = vim/bundle/vim-airline-themes
+	url = ../../vim-airline/vim-airline-themes.git
+[submodule "vim/bundle/vim-coffee-script"]
+	path = vim/bundle/vim-coffee-script
+	url = ../../kchmck/vim-coffee-script.git
+[submodule "vim/bundle/vim-colors-solarized"]
+	path = vim/bundle/vim-colors-solarized
+	url = ../../altercation/vim-colors-solarized.git
+[submodule "vim/bundle/vim-cucumber"]
+	path = vim/bundle/vim-cucumber
+	url = ../../tpope/vim-cucumber.git
+[submodule "vim/bundle/vim-dispatch"]
+	path = vim/bundle/vim-dispatch
+	url = ../../tpope/vim-dispatch.git
+[submodule "vim/bundle/vim-easymotion"]
+	path = vim/bundle/vim-easymotion
+	url = ../../easymotion/vim-easymotion.git
+[submodule "vim/bundle/vim-easyoperator-line"]
+	path = vim/bundle/vim-easyoperator-line
+	url = ../../haya14busa/vim-easyoperator-line.git
+[submodule "vim/bundle/vim-easyoperator-phrase"]
+	path = vim/bundle/vim-easyoperator-phrase
+	url = ../../haya14busa/vim-easyoperator-phrase.git
+[submodule "vim/bundle/vim-endwise"]
+	path = vim/bundle/vim-endwise
+	url = ../../tpope/vim-endwise.git
+[submodule "vim/bundle/vim-fugitive"]
+	path = vim/bundle/vim-fugitive
+	url = ../../tpope/vim-fugitive.git
+[submodule "vim/bundle/vim-haml"]
+	path = vim/bundle/vim-haml
+	url = ../../tpope/vim-haml.git
+[submodule "vim/bundle/vim-markdown"]
+	path = vim/bundle/vim-markdown
+	url = ../../plasticboy/vim-markdown.git
+[submodule "vim/bundle/vim-mkdir"]
+	path = vim/bundle/vim-mkdir
+	url = ../../pbrisbin/vim-mkdir.git
+[submodule "vim/bundle/vim-multiple-cursors"]
+	path = vim/bundle/vim-multiple-cursors
+	url = ../../terryma/vim-multiple-cursors.git
+[submodule "vim/bundle/vim-over"]
+	path = vim/bundle/vim-over
+	url = ../../osyo-manga/vim-over.git
+[submodule "vim/bundle/vim-rails"]
+	path = vim/bundle/vim-rails
+	url = ../../tpope/vim-rails.git
+[submodule "vim/bundle/vim-rake"]
+	path = vim/bundle/vim-rake
+	url = ../../tpope/vim-rake.git
+[submodule "vim/bundle/vim-repeat"]
+	path = vim/bundle/vim-repeat
+	url = ../../tpope/vim-repeat.git
+[submodule "vim/bundle/vim-rspec"]
+	path = vim/bundle/vim-rspec
+	url = ../../thoughtbot/vim-rspec.git
+[submodule "vim/bundle/vim-ruby"]
+	path = vim/bundle/vim-ruby
+	url = ../../vim-ruby/vim-ruby.git
+[submodule "vim/bundle/vim-surround"]
+	path = vim/bundle/vim-surround
+	url = ../../tpope/vim-surround.git
+[submodule "vim/bundle/vim-yankstack"]
+	path = vim/bundle/vim-yankstack
+	url = ../../maxbrunsfeld/vim-yankstack.git
