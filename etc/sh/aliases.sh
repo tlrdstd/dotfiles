@@ -1,6 +1,7 @@
 alias ..='cd ..'
 alias ...='cd ../../'
 alias ....='cd ../../..'
+alias bash='SHELL=bash bash'
 alias colors="set | egrep '^COLOR_\w*' | sort " # lists all the colors
 alias dot='cd $DOTFILES'
 alias ga='git add -p'
@@ -16,3 +17,4 @@ alias less='less -R'
 alias ll='ls -alF'
 alias ls='ls --color=auto'
 alias psg='ps -ef | grep'
+alias zsh='SHELL=zsh zsh'
