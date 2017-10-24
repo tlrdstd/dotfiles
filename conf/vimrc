@@ -61,8 +61,8 @@ hi link EasyMotionShade Comment
 " ctrlp - fuzzy file matching for opening files
 let g:ctrlp_cache_dir   = '$HOME/.tmp/ctrlp' " store cache for later reuse
 let g:ctrlp_show_hidden = 1
-let g:ctrlp_max_files = 0
-let g:ctrlp_max_height = 25
+let g:ctrlp_max_files   = 0
+let g:ctrlp_max_height  = 25
 
 " Solarized color scheme settings for better visibility
 let g:solarized_visibility='low'
@@ -265,14 +265,14 @@ xnoremap <leader>fr :call VisualFindAndReplaceWithSelection()<CR>
 source $VIMRUNTIME/mswin.vim
 
 " better tab navigation
-imap <C-Space> <Esc>      " go to command mode
-nnoremap <C-Right> <C-W>l " move to right pane
-nnoremap <C-Left> <C-W>h " move to left pane
-nnoremap <C-Up> <C-W>k " move to top pane
-nnoremap <C-Down> <C-W>j " move to bottom pane
-nnoremap <C-Tab> :tabnext<CR> " next tab (overrides mswin.vim)
+imap <C-Space> <Esc>                " go to command mode
+nnoremap <C-Right> <C-W>l           " move to right pane
+nnoremap <C-Left> <C-W>h            " move to left pane
+nnoremap <C-Up> <C-W>k              " move to top pane
+nnoremap <C-Down> <C-W>j            " move to bottom pane
+nnoremap <C-Tab> :tabnext<CR>       " next tab (overrides mswin.vim)
 nnoremap <C-S-Tab> :tabprevious<CR> " previous tab
-nmap <C-t> :tabnew<CR>  " new tab
+nmap <C-t> :tabnew<CR>              " new tab
 
 " import user/machine specific tweaks
 if filereadable(expand("~/.vimrc_local"))
