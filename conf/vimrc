@@ -88,63 +88,63 @@ let g:syntastic_eruby_ruby_quiet_messages = {'regex': 'possibly useless use of a
 " read this file as UTF-8 (special chars in listchars)
 scriptencoding utf-8
 
-set antialias              " gui font is antialias
-set autochdir              " cwd follows current file
-set autoindent " carryover indent level from previous level
-set backspace=indent,eol,start " backspace over whitespace
-set background=dark " use dark Solarized theme
-set bufhidden=delete " close hidden buffers
-set cindent  " use c-style auto-indentation
+set antialias                         " gui font is antialias
+set autochdir                         " cwd follows current file
+set autoindent                        " carryover indent level from previous level
+set backspace=indent,eol,start        " backspace over whitespace
+set background=dark                   " use dark Solarized theme
+set bufhidden=delete                  " close hidden buffers
+set cindent                           " use c-style auto-indentation
 set cinwords=if,else,while,do,for,switch,case,Module,def,Class " indent after
-set colorcolumn=100 " color the 100th column of text
-set cursorline " highlight active line
-set diffopt+=icase " case-insensitive diff
-set diffopt+=iwhite " ignore whitespace in diff
-set encoding=utf-8 " default file encoding
-set equalalways " multime windows are created equal size
-set expandtab " replace <Tab> with spaces
-set guifont=Fira\ Code:h12
-set guioptions+=b " display horizontal (bottom) scrollbar
-set guioptions-=t " no tearoff menu entries
-set history=1000 " remember a lot of commands
-set hlsearch " highlight last used search pattern
-set ignorecase " ignore case in searches
-set incsearch " incremental search while typing
-set laststatus=2 " always show vim-airline statusbar
-"set lazyredraw " try to combat screen flicker
-set linebreak " line wrap at word endings
-set list " show invisible whitespace chars
-set listchars=extends:> " displays this char at too-long lines
-set listchars+=trail:.,tab:»\ ,eol:¬ " display whitespace as such
-set macligatures " enable macvim ligature support
-set matchpairs=(:),{:},[:],<:> " valid characters to start/end a highlighted tag
-set matchtime=2 " show matching parens for x tenths of a second
-set mousehide " hide the mouse when typing
-set nobackup " no auto-backups (I use git)
-set noswapfile " no .swp files
-set nowrap " don't wrap long lines
-set nowritebackup " no backup before writing
-set nojoinspaces " do not insert extra whitespace when joining lines
-set number " display line numbers
-set ruler " show the cursor position all the time
-set shiftwidth=2 " auto-indent by this many spaces
-set showcmd " display incomplete commands
-set showmatch " show matching braces when selected
-set sidescroll=5 " scroll horizontally by this many columns
-set smartcase " if a search term has a capital letter, it's case-sensitive
-set splitbelow " horizontal splits put new window below current
-set splitright " vertical splits put new window to right of current
-set tabstop=2 " <Tab> looks this many spaces wide
-set textwidth=0 " do not force too-long lines to automatically break into a newline
+set colorcolumn=100                   " color the 100th column of text
+set cursorline                        " highlight active line
+set diffopt+=icase                    " case-insensitive diff
+set diffopt+=iwhite                   " ignore whitespace in diff
+set encoding=utf-8                    " default file encoding
+set equalalways                       " multime windows are created equal size
+set expandtab                         " replace <Tab> with spaces
+set formatoptions+=r                  " auto-continue comment blocks on Enter
+set guifont=Fira\ Code:h12            " use this font in the GUI
+set guioptions+=b                     " display horizontal (bottom) scrollbar
+set guioptions-=t                     " no tearoff menu entries
+set history=1000                      " remember a lot of commands
+set hlsearch                          " highlight last used search pattern
+set ignorecase                        " ignore case in searches
+set incsearch                         " incremental search while typing
+set laststatus=2                      " always show vim-airline statusbar
+set linebreak                         " line wrap at word endings
+set list                              " show invisible whitespace chars
+set listchars=extends:>               " displays this char at too-long lines
+set listchars+=trail:.,tab:»\ ,eol:¬  " display whitespace as such
+set macligatures                      " enable macvim ligature support
+set matchpairs=(:),{:},[:],<:>        " valid characters to start/end a highlighted tag
+set matchtime=2                       " show matching parens for x tenths of a second
+set mousehide                         " hide the mouse when typing
+set nobackup                          " no auto-backups (I use git)
+set noswapfile                        " no .swp files
+set nowrap                            " don't wrap long lines
+set nowritebackup                     " no backup before writing
+set nojoinspaces                      " do not insert extra whitespace when joining lines
+set number                            " display line numbers
+set regexpengine=2                    " use newer, faster regex engine (mostly for Ctrl-P speed)
+set ruler                             " show the cursor position all the time
+set shiftwidth=2                      " auto-indent by this many spaces
+set showcmd                           " display incomplete commands
+set showmatch                         " show matching braces when selected
+set sidescroll=5                      " scroll horizontally by this many columns
+set smartcase                         " if a search term has a capital letter, it's case-sensitive
+set splitbelow                        " horizontal splits put new window below current
+set splitright                        " vertical splits put new window to right of current
+set tabstop=2                         " <Tab> looks this many spaces wide
+set textwidth=0                       " do not force too-long lines to automatically break into a newline
 set undodir=$DOTFILES/vim/tmp/undodir " persistent undo
-set undofile " persistent undo
-set visualbell t_vb= " disable visual/audible bell 
-set wildignore+=undodir
-set wildmenu " command-mode auto-complete
-set wildmode=longest:full " control wildmenu matching
+set undofile                          " persistent undo
+set visualbell t_vb=                  " disable visual/audible bell
+set wildignore+=undodir               " ignore tmp directories when expanding wildcards
+set wildmenu                          " command-mode auto-complete
+set wildmode=longest:full             " control wildmenu matching
 syntax enable
 
-set formatoptions:tcqr " not sure what these do yet
 
 " Command remapping
 " -----------------
