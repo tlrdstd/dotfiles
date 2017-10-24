@@ -42,6 +42,13 @@ function dotfiles_install_conf_files() {
   done
 }
 
+function dotfiles_install_tmp_dir() {
+  SOURCE=${DOTFILES}/etc/tmp
+  TARGET=${HOME}/.tmp
+
+  dotfiles_backup_and_link ${SOURCE} ${TARGET}
+}
+
 function dotfiles_install_vim_dir() {
   SOURCE=${DOTFILES}/vim
   TARGET=${HOME}/.vim
@@ -71,6 +78,7 @@ function dotfiles_install_shellrc() {
 function dotfiles_install() {
   pushd ~
   dotfiles_install_conf_files
+  dotfiles_install_tmp_dir
   dotfiles_install_vim_dir
   dotfiles_install_vim_fonts
   dotfiles_install_shellrc

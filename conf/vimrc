@@ -59,7 +59,7 @@ hi link EasyMotionTarget2Second ErrorMsg
 hi link EasyMotionShade Comment
 
 " ctrlp - fuzzy file matching for opening files
-let g:ctrlp_cache_dir = '$DOTFILES/vim/tmp/ctrlp' " store cache for later reuse
+let g:ctrlp_cache_dir   = '$HOME/.tmp/ctrlp' " store cache for later reuse
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_max_files = 0
 let g:ctrlp_max_height = 25
@@ -137,7 +137,7 @@ set splitbelow                        " horizontal splits put new window below c
 set splitright                        " vertical splits put new window to right of current
 set tabstop=2                         " <Tab> looks this many spaces wide
 set textwidth=0                       " do not force too-long lines to automatically break into a newline
-set undodir=$DOTFILES/vim/tmp/undodir " persistent undo
+set undodir=$HOME/.tmp/undodir        " persistent undo
 set undofile                          " persistent undo
 set visualbell t_vb=                  " disable visual/audible bell
 set wildignore+=undodir               " ignore tmp directories when expanding wildcards
