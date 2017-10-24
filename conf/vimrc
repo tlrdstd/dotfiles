@@ -103,7 +103,7 @@ set diffopt+=iwhite " ignore whitespace in diff
 set encoding=utf-8 " default file encoding
 set equalalways " multime windows are created equal size
 set expandtab " replace <Tab> with spaces
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 13
+set guifont=Fira\ Code:h12
 set guioptions+=b " display horizontal (bottom) scrollbar
 set guioptions-=t " no tearoff menu entries
 set history=1000 " remember a lot of commands
@@ -116,7 +116,8 @@ set linebreak " line wrap at word endings
 set list " show invisible whitespace chars
 set listchars=extends:> " displays this char at too-long lines
 set listchars+=trail:.,tab:»\ ,eol:¬ " display whitespace as such
-set matchpairs+=<:> " these are valid characters to start/end a highlighted tag
+set macligatures " enable macvim ligature support
+set matchpairs=(:),{:},[:],<:> " valid characters to start/end a highlighted tag
 set matchtime=2 " show matching parens for x tenths of a second
 set mousehide " hide the mouse when typing
 set nobackup " no auto-backups (I use git)
