@@ -1,7 +1,15 @@
 # Global shell config variables
 export EDITOR=vim
-export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}
+
+# Inject Homebrew into the PATH
 export PATH=/usr/local/opt/coreutils/libexec/gnubin:${PATH}
+export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}
+
+# Inject Linuxbrew into the PATH
+export PATH=~/.linuxbrew/bin:${PATH}
+export PATH=~/.linuxbrew/sbin:${PATH}
+export MANPATH=~/.linuxbrew/share/man:${MANPATH}
+export INFOPATH=~/.linuxbrew/share/info:${INFOPATH}
 
 # History management
 export HISTFILE=~/.tmp/.histfile
