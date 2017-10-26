@@ -11,6 +11,7 @@
   st = status
   type = cat-file -t
   unstage = reset HEAD
+  dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%ar%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
 
 [apply]
   whitespace = fix
@@ -25,6 +26,7 @@
   status = auto
   hist = auto
   all = auto
+  ui = auto
 
 [color "branch"]
   current = yellow reverse
@@ -33,6 +35,7 @@
 
 [core]
   whitespace = trailing-space,space-before-tab
+  pager = less -FMRiX
 
 [diff]
   mnemonicprefix = true
@@ -56,3 +59,6 @@
 [rerere]
   enabled = true
   autoupdate = true
+
+[push]
+  push = simple
