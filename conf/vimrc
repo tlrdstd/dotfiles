@@ -252,18 +252,23 @@ map <leader>a :call RunAllSpecs()<CR>
 " Run cukes from within vim, via dispatch
 map <leader>C :Dispatch spring cucumber %<CR>
 
-" fancy vim-over find/replace -- conflicts with something else right now :-(
-" Function call depth is higher than 'maxfuncdepth'
+" vim-over - add shortcuts for visual find/replace
 function! VisualFindAndReplace()
-  :OverCommandLine%s/
+  :OverCommandLine %s/
+  :nohlsearch
 endfunction
 
 function! VisualFindAndReplaceWithSelection() range
   :'<,'>OverCommandLine s/
+  :nohlsearch
 endfunction
 
-nnoremap <leader>fr :call VisualFindAndReplace()<CR>
+" visually replace all instances of the current word
+nnoremap <leader>frw :call VisualFindAndReplace()<CR><C-r><C-w>/
+" visually find/replace within the current selection
 xnoremap <leader>fr :call VisualFindAndReplaceWithSelection()<CR>
+" visually find/replace within the entire buffer
+nnoremap <leader>fr :call VisualFindAndReplace()<CR>
 
 " Make Linux Vim behave more like Windows Vim
 source $VIMRUNTIME/mswin.vim
