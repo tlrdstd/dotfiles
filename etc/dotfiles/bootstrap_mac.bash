@@ -3,6 +3,13 @@
 # install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+brew tap homebrew/dupes
+brew tap homebrew/cask
+brew tap caskroom/fonts
+
+brew cask install font-fira-code
+
+brew install ag
 brew install bash
 brew install binutils
 brew install coreutils
@@ -26,6 +33,7 @@ brew install grep
 brew install gzip
 brew install gzip
 brew install htop
+brew install iterm2
 brew install less
 brew install m4
 brew install make
@@ -41,7 +49,6 @@ brew install watch
 brew install wdiff
 brew install wget
 brew install zsh
-brew tap homebrew/dupes
 
 brew install vim --with-override-system-vi
 brew install macvim --env-std --with-override-system-vim

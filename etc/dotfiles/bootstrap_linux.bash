@@ -17,14 +17,17 @@ else
   brew install gcc
 fi
 
+brew install ag
 brew install bash
 brew install git
+brew install gtk+
 brew install perl
 brew install python
 brew install python3
 brew install ruby
 brew install tmux
-brew install vim
+sed -i.bak 's/enable-gui=no/enable-gui/' ~/.linuxbrew/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/vim.rb
+brew install vim --with-override-system-vi --with-client-server --with-lua --with-python3 --with-tcl --with-gettext --enable-gui
 brew install zsh
 
 pip2 install --upgrade pip setuptools
