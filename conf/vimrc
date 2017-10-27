@@ -122,9 +122,6 @@ set linebreak                         " line wrap at word endings
 set list                              " show invisible whitespace chars
 set listchars=extends:>               " displays this char at too-long lines
 set listchars+=trail:.,tab:»\ ,eol:¬  " display whitespace as such
-if has('gui_macvim')
-  set macligatures                    " enable macvim ligature support
-endif
 set matchpairs=(:),{:},[:],<:>        " valid characters to start/end a highlighted tag
 set matchtime=2                       " show matching parens for x tenths of a second
 set mousehide                         " hide the mouse when typing
@@ -151,8 +148,13 @@ set visualbell t_vb=                  " disable visual/audible bell
 set wildignore+=undodir               " ignore tmp directories when expanding wildcards
 set wildmenu                          " command-mode auto-complete
 set wildmode=longest:full             " control wildmenu matching
-syntax enable
 
+if has('gui_macvim')
+  set macligatures                    " enable macvim ligature support
+  set macmeta                         " treat the Mac Option key as Meta
+endif
+
+syntax enable
 
 " Command remapping
 " -----------------
