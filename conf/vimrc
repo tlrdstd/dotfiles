@@ -82,11 +82,8 @@ let g:netrw_sort_sequence='[\/]$,*,\.swp$,\.bak$,\.orig$,\~$'
 " syntastic - squash useless/annoying complaints
 let g:syntastic_eruby_ruby_quiet_messages = {'regex': 'possibly useless use of a variable in void context'}
 
-" vim-yankstack shortcuts
+" vim-yankstack - ensure plugin is active before yank/delete key mappings change
 call yankstack#setup()
-map Y y$
-map <leader>p <Plug>yankstack_substitute_older_paste
-map <leader>P <Plug>yankstack_substitute_newer_paste
 
 " Vim configs
 " -----------
@@ -251,6 +248,12 @@ map <leader>a :call RunAllSpecs()<CR>
 
 " Run cukes from within vim, via dispatch
 map <leader>C :Dispatch spring cucumber %<CR>
+
+" vim-yankstack - activate standard shortcuts
+" make Y behave like D and C
+map Y y$
+map <leader>p <Plug>yankstack_substitute_older_paste
+map <leader>P <Plug>yankstack_substitute_newer_paste
 
 " incsearch - overwrite standard Vim search shortcuts
 map / <Plug>(incsearch-forward)
