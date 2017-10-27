@@ -91,3 +91,6 @@
 [submodule "vim/bundle/vim-yankstack"]
 	path = vim/bundle/vim-yankstack
 	url = ../../maxbrunsfeld/vim-yankstack.git
+[submodule "vim/bundle/incsearch.vim"]
+	path = vim/bundle/incsearch.vim
+	url = ../../haya14busa/incsearch.vim.git
