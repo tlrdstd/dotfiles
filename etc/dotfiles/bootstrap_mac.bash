@@ -7,6 +7,7 @@ brew tap homebrew/dupes
 brew tap homebrew/cask
 brew tap caskroom/fonts
 
+brew cask install xquartz
 brew cask install font-fira-code
 
 brew install ag
@@ -50,7 +51,6 @@ brew install wdiff
 brew install wget
 brew install zsh
 
-brew install Caskroom/cask/xquartz
 brew install vim --with-override-system-vi
 brew install macvim --env-std --with-override-system-vim
 brew link --overwrite macvim

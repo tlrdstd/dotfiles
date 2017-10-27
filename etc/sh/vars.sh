@@ -16,3 +16,6 @@ export HISTFILE=~/.tmp/.histfile
 export HISTSIZE=100000 # big shell command history
 export HISTFILESIZE=100000 # big shell command history file
 export HISTCONTROL=ignoredups:erasedups # avoid shell command history dups
+
+# Enable X11
+export DISPLAY=:0
