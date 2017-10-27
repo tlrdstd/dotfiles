@@ -33,3 +33,9 @@ brew install zsh
 pip2 install --upgrade pip setuptools
 pip3 install --upgrade pip setuptools wheel
 pip3 install powerline-status
+
+for type in Bold Light Medium Regular Retina; do
+  wget -O ~/.local/share/fonts/FiraCode-${type}.ttf \
+  "https://github.com/tonsky/FiraCode/blob/master/distr/ttf/FiraCode-${type}.ttf?raw=true";
+done
+fc-cache --verbose -f ~/.local/share/fonts

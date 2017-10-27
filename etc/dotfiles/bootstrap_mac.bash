@@ -50,6 +50,7 @@ brew install wdiff
 brew install wget
 brew install zsh
 
+brew install Caskroom/cask/xquartz
 brew install vim --with-override-system-vi
 brew install macvim --env-std --with-override-system-vim
 brew link --overwrite macvim
