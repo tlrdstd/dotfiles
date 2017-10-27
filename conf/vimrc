@@ -82,6 +82,12 @@ let g:netrw_sort_sequence='[\/]$,*,\.swp$,\.bak$,\.orig$,\~$'
 " syntastic - squash useless/annoying complaints
 let g:syntastic_eruby_ruby_quiet_messages = {'regex': 'possibly useless use of a variable in void context'}
 
+" vim-yankstack shortcuts
+call yankstack#setup()
+map Y y$
+map <leader>p <Plug>yankstack_substitute_older_paste
+map <leader>P <Plug>yankstack_substitute_newer_paste
+
 " Vim configs
 " -----------
 
