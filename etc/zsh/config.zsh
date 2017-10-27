@@ -18,5 +18,3 @@ bindkey '^R' history-incremental-search-backward
 # Activate zsh completions engine
 autoload -Uz compinit
 compinit
-fpath=(/usr/local/share/zsh-completions $fpath)
-zstyle ':completion:*:*:git:*' script ${DOTFILES}/etc/git/git-completion.zsh
