@@ -179,12 +179,6 @@ map <Enter> o<ESC>   " inserts new line below current line without going into in
 noremap <leader>bb obinding.pry<esc>
 noremap <leader>BB Obinding.pry<esc>
 
-" Prevent recording when trying to quit
-map q <nop>
-
-" Fix mistaken W errors when trying to save
-cmap W w
-
 " Save shortcuts
 nnoremap <leader>s :w<CR>
 nnoremap <leader>w :w<CR>
