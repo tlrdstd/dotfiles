@@ -59,10 +59,11 @@ hi link EasyMotionTarget2Second ErrorMsg
 hi link EasyMotionShade Comment
 
 " ctrlp - fuzzy file matching for opening files
-let g:ctrlp_cache_dir   = '$HOME/.tmp/ctrlp' " store cache for later reuse
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_max_files   = 0
 let g:ctrlp_max_height  = 25
+let g:ctrlp_use_caching = 0
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
 " Solarized color scheme settings for better visibility
 let g:solarized_visibility='low'
