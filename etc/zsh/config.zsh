@@ -15,6 +15,16 @@ bindkey -v
 # enable Ctrl-R history search like emacs mode
 bindkey '^R' history-incremental-search-backward
 
+# make zsh vi bindings more like vim
+# permit deleting backwards from insert point
+bindkey "^?" backward-delete-char
+# ctrl-w deletes previous word
+bindkey "^W" backward-kill-word
+# ctrl-h also deletes the previous char
+bindkey "^H" backward-delete-char
+# ctrl-u deletes an entire line
+bindkey "^U" backward-kill-line
+
 # Activate zsh completions engine
 autoload -Uz compinit
 compinit
