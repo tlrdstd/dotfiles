@@ -25,6 +25,12 @@ function dotfiles_backup_and_link() {
   ln -sf ${SOURCE} ${TARGET}
 }
 
+function dotfiles_install_submodules() {
+  pushd ${DOTFILES}
+  git submodule update --recursive --init
+  popd
+}
+
 function dotfiles_install_conf_files() {
   for dotfile in $(find ${DOTFILES}/conf -maxdepth 1 -type f); do
     SOURCE=${dotfile}
@@ -84,6 +90,7 @@ function dotfiles_install_shellrc() {
 
 function dotfiles_install() {
   pushd ~
+  dotfiles_install_submodules
   dotfiles_install_conf_files
   dotfiles_install_tmp_dir
   dotfiles_install_vim_dir
