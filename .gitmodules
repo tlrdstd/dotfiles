@@ -94,3 +94,6 @@
 [submodule "vim/bundle/incsearch.vim"]
 	path = vim/bundle/incsearch.vim
 	url = ../../haya14busa/incsearch.vim.git
+[submodule "etc/zsh/oh-my-zsh"]
+	path = etc/zsh/oh-my-zsh
+	url = ../../robbyrussell/oh-my-zsh.git
