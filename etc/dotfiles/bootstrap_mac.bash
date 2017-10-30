@@ -8,6 +8,8 @@ brew tap homebrew/cask
 brew tap caskroom/fonts
 
 brew cask install xquartz
+# do not launch xterm on X11 startup
+defaults write org.macosforge.xquartz.X11 app_to_run /usr/bin/true
 brew cask install font-fira-code
 
 brew install ag
