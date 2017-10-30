@@ -33,6 +33,13 @@ function dotfiles_install_conf_files() {
     dotfiles_backup_and_link ${SOURCE} ${TARGET}
   done
 
+  for dotfile in $(find ${DOTFILES}/conf -maxdepth 1 -type l); do
+    SOURCE=${dotfile}
+    TARGET=${HOME}/.`basename ${dotfile}`
+
+    dotfiles_backup_and_link ${SOURCE} ${TARGET}
+  done
+
   for configdir in $(find ${DOTFILES}/conf/config -maxdepth 1 -mindepth 1 -type d); do
     SOURCE=${configdir}
     TARGET=${HOME}/.config/`basename ${configdir}`
