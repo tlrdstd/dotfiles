@@ -2,8 +2,8 @@ alias ..='cd ..'
 alias ...='cd ../../'
 alias ....='cd ../../..'
 alias bash='SHELL=bash bash'
-alias colors="set | egrep '^COLOR_\w*' | sort " # lists all the colors
 alias dot='cd $DOTFILES'
+alias dotfile_colors="set | egrep '^COLOR_\w*' | sort " # lists all the colors
 alias ga='git add -p'
 alias gb='git br'
 alias gci='git ci'
