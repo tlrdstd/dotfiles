@@ -6,10 +6,10 @@ export PATH=/usr/local/opt/coreutils/libexec/gnubin:${PATH}
 export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}
 
 # Inject Linuxbrew into the PATH
-export PATH=~/.linuxbrew/bin:${PATH}
-export PATH=~/.linuxbrew/sbin:${PATH}
-export MANPATH=~/.linuxbrew/share/man:${MANPATH}
-export INFOPATH=~/.linuxbrew/share/info:${INFOPATH}
+export PATH=/home/linuxbrew/.linuxbrew/bin:~/.linuxbrew/bin:${PATH}
+export PATH=/home/linuxbrew/.linuxbrew/sbin:~/.linuxbrew/sbin:${PATH}
+export MANPATH=/home/linuxbrew/.linuxbrew/share/man:~/.linuxbrew/share/man:${MANPATH}
+export INFOPATH=/home/linuxbrew/.linuxbrew/share/info:~/.linuxbrew/share/info:${INFOPATH}
 
 # History management
 export HISTFILE=~/.tmp/.histfile
