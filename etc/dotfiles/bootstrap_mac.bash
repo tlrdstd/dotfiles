@@ -61,4 +61,4 @@ brew update
 brew upgrade
 brew doctor
 
-pip install powerline-status
+pip3 install powerline-status
