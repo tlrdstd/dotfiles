@@ -6,6 +6,7 @@
   dump = cat-file -p
   hist = log --graph --pretty=format:'%C(yellow)%h %C(red)|%C(yellow)%d%C(white) %s[%C(green)%an%C(white)] %C(cyan)%ad%C(white)' --date=relative
   histt = log --graph --pretty=format:\"%C(yellow)%h %C(white)%ad %C(red)|%C(white) %s%d [%C(green)%an%C(white)]\" --date=short
+  review = log -p
   m = merge --no-ff --no-edit
   pr = remote prune origin
   st = status
