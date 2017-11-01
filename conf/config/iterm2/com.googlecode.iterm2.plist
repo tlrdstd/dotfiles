@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AllowClipboardAccess</key>
+	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
 	<key>AppleScrollAnimationEnabled</key>
@@ -269,9 +271,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>330 305 620 392 0 0 1280 777 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>140 346 918 381 0 0 1280 777 </string>
+	<string>1171 1565 796 473 661 800 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>643 361 585 402 0 0 1280 777 </string>
+	<string>643 68 634 709 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2144,6 +2146,10 @@
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
+	<true/>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
+	<integer>0</integer>
 	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt</key>
 	<true/>
 	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt_selection</key>
@@ -2155,7 +2161,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>77094136-61B6-4649-BC5B-20E2DA2D3997</string>
 	<key>NoSyncLastTipTime</key>
-	<real>530800913.44067699</real>
+	<real>531059034.83858198</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2173,6 +2179,7 @@
 		<string>0003</string>
 		<string>0004</string>
 		<string>0005</string>
+		<string>0006</string>
 	</array>
 	<key>PointerActions</key>
 	<dict>
@@ -2220,7 +2227,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-26T19:42:14Z</date>
+	<date>2017-10-30T11:30:17Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
