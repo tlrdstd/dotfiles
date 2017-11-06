@@ -271,9 +271,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>330 305 620 392 0 0 1280 777 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1171 1565 796 473 661 800 2560 1417 </string>
+	<string>1171 1526 937 512 661 800 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>643 68 634 709 0 0 1280 777 </string>
+	<string>661 800 2560 1417 661 800 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1477,7 +1477,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
-			<false/>
+			<true/>
 			<key>Smart Cursor Color</key>
 			<false/>
 			<key>Sync Title</key>
@@ -2161,7 +2161,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>77094136-61B6-4649-BC5B-20E2DA2D3997</string>
 	<key>NoSyncLastTipTime</key>
-	<real>531059034.83858198</real>
+	<real>531404839.25865901</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2180,6 +2180,10 @@
 		<string>0004</string>
 		<string>0005</string>
 		<string>0006</string>
+		<string>0007</string>
+		<string>0008</string>
+		<string>0009</string>
+		<string>0010</string>
 	</array>
 	<key>PointerActions</key>
 	<dict>
@@ -2227,7 +2231,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-30T11:30:17Z</date>
+	<date>2017-11-01T18:07:35Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
