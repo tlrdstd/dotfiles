@@ -109,7 +109,7 @@ set encoding=utf-8                    " default file encoding
 set equalalways                       " multime windows are created equal size
 set expandtab                         " replace <Tab> with spaces
 set formatoptions+=r                  " auto-continue comment blocks on Enter
-set guifont=Fira\ Code:h12            " use this font in the GUI
+set guifont=Fira\ Code\ 10            " use this font in the GUI
 set guioptions+=b                     " display horizontal (bottom) scrollbar
 set guioptions-=t                     " no tearoff menu entries
 set history=1000                      " remember a lot of commands
@@ -151,6 +151,7 @@ set wildmode=longest:full             " control wildmenu matching
 if has('gui_macvim')
   set macligatures                    " enable macvim ligature support
   set macmeta                         " treat the Mac Option key as Meta
+  set guifont=Fira\ Code:h12          " use this font in the GUI
 endif
 
 syntax enable
