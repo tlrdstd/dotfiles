@@ -43,6 +43,7 @@ brew install make
 brew install nano
 brew install nmap
 brew install perl
+brew install postgresql
 brew install python
 brew install python3
 brew install ruby

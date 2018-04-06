@@ -22,6 +22,7 @@ brew install bash
 brew install git
 brew install gtk+
 brew install perl
+brew install postgresql
 brew install python
 brew install python3
 brew install ruby
