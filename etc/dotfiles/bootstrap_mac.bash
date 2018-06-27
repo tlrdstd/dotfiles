@@ -37,6 +37,7 @@ brew install gzip
 brew install gzip
 brew install htop
 brew install iterm2
+brew install jdk
 brew install less
 brew install m4
 brew install make
