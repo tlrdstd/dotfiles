@@ -2,7 +2,11 @@
 
 # install linuxbrew
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
-sudo yum groupinstall 'Development Tools'
+if which yum > /dev/null ; then
+  sudo yum groupinstall 'Development Tools'
+else
+  sudo apt-get install build-essential
+fi
 
 # build modern gcc (and glibc) using the pre-installed gcc-4.4
 # per https://github.com/Linuxbrew/brew/wiki/CentOS6
