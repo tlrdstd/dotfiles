@@ -77,11 +77,9 @@ function dotfiles_install_vim_fonts() {
 # otherwise, take over the rc file for all supported shells (.bashrc, .zshrc, etc)
 function dotfiles_install_shellrc() {
   # Find all supported/configurable shells
-  for shell in $(grep bin /etc/shells | xargs -I % basename % | sort | uniq); do
-    if [ -e ${DOTFILES}/etc/${shell} ]; then
-      # Take over the rc file for this shell
-      dotfiles_backup_and_link ${DOTFILES}/conf/dotfilesrc ${HOME}/.${shell}rc
-    fi
+  for shell in $(echo 'bash sh zsh'); do
+    # Take over the rc file for this shell
+    dotfiles_backup_and_link ${DOTFILES}/conf/dotfilesrc ${HOME}/.${shell}rc
   done
 
   # Activate dotfiles for this shell
