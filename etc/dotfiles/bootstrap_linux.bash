@@ -35,6 +35,7 @@ pip2 install --upgrade pip setuptools
 pip3 install --upgrade pip setuptools wheel
 pip3 install powerline-status
 
+mkdir -pv ~/.local/share/fonts
 for type in Bold Light Medium Regular Retina; do
   wget -O ~/.local/share/fonts/FiraCode-${type}.ttf \
   "https://github.com/tonsky/FiraCode/blob/master/distr/ttf/FiraCode-${type}.ttf?raw=true";
