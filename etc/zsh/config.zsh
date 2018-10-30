@@ -25,6 +25,8 @@ bindkey "^H" backward-delete-char
 # ctrl-u deletes an entire line
 bindkey "^U" backward-kill-line
 
+# Specify custom dotfiles ZSH completion path
+fpath=(~/.tmp/completion $fpath)
 # Activate zsh completions engine
 autoload -Uz compinit
 compinit
