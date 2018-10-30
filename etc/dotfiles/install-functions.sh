@@ -17,12 +17,15 @@ function dotfiles_backup() {
 }
 
 function dotfiles_backup_and_link() {
-  SOURCE=$1
+  ABSOLUTE_SOURCE=$1
   TARGET=$2
 
+  DOTFILES_BASEDIR=`basename ${DOTFILES}`
+  RELATIVE_SOURCE=`echo ${ABSOLUTE_SOURCE} | sed -e "s|^${DOTFILES}/|${DOTFILES_BASEDIR}/|"`
+
   dotfiles_backup ${TARGET}
-  echo "linking ${SOURCE} to ${TARGET}"
-  ln -sf ${SOURCE} ${TARGET}
+  echo "linking ${ABSOLUTE_SOURCE} to ${TARGET} as ${RELATIVE_SOURCE}"
+  ln -sf ${RELATIVE_SOURCE} ${TARGET}
 }
 
 function dotfiles_install_submodules() {
