@@ -16,12 +16,3 @@ export COLOR_PURPLE='\e[0;35m'
 export COLOR_RED='\e[0;31m'
 export COLOR_WHITE='\e[1;37m'
 export COLOR_YELLOW='\e[1;33m'
-
-#export COLOR_BOLD='\[\e]1m\]'
-
-# XXX - these escape sequences only really work in Bash.
-# XXX - if these are needed in zsh, do things somewhat differently.
-# escaped color sequences, for proper character counts in shell prompts
-for color in $(set | egrep -a '^COLOR_\w*' | cut -f1 -d"="); do
-  eval "export ESC_${color}=\${color}"
-done
