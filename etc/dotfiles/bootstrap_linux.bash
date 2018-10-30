@@ -23,6 +23,7 @@ fi
 
 brew install ag
 brew install bash
+brew install curl --with-gssapi --with-libssh2
 brew install git
 brew install gtk+
 brew install perl
