@@ -1,4 +1,5 @@
 dotfiles_timestamp=`date +"%Y%m%d%H%M%S"`
+DOTFILES_BASEDIR=`basename ${DOTFILES}`
 
 function dotfiles_backup() {
   TARGET=$1
@@ -35,8 +36,6 @@ function dotfiles_install_submodules() {
 }
 
 function dotfiles_install_conf_files() {
-  DOTFILES_BASEDIR=`basename ${DOTFILES}`
-
   pushd ${DOTFILES}
 
   for dotfile in $(find conf -maxdepth 1 -type f); do
@@ -65,14 +64,14 @@ function dotfiles_install_conf_files() {
 }
 
 function dotfiles_install_tmp_dir() {
-  SOURCE=${DOTFILES}/etc/tmp
+  SOURCE=${DOTFILES_BASEDIR}/etc/tmp
   TARGET=${HOME}/.tmp
 
   dotfiles_backup_and_link ${SOURCE} ${TARGET}
 }
 
 function dotfiles_install_vim_dir() {
-  SOURCE=${DOTFILES}/vim
+  SOURCE=${DOTFILES_BASEDIR}/vim
   TARGET=${HOME}/.vim
 
   dotfiles_backup_and_link ${SOURCE} ${TARGET}
@@ -85,8 +84,6 @@ function dotfiles_install_vim_fonts() {
 # integrate with bootstrap project, if present
 # otherwise, take over the rc file for all supported shells (.bashrc, .zshrc, etc)
 function dotfiles_install_shellrc() {
-  DOTFILES_BASEDIR=`basename ${DOTFILES}`
-
   # Find all supported/configurable shells
   for shell in $(echo 'bash sh zsh'); do
     # Take over the rc file for this shell
