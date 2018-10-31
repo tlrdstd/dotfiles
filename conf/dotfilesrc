@@ -9,6 +9,14 @@ export DOTFILES_SHELL=$(basename $SHELL)
 # End mandatory Dotfile configs
 
 function dotfiles_init() {
+  DOTFILES_PRE_HOOK=${HOME}/.dotfilesrc-pre-hook
+  DOTFILES_POST_HOOK=${HOME}/.dotfilesrc-post-hook
+
+  # Source user-specific tweaks
+  if [ -f ${DOTFILES_PRE_HOOK} ]; then
+     source ${DOTFILES_PRE_HOOK}
+  fi
+
   # Load baseline configs that (should) work in all shells
   source ${DOTFILES}/etc/sh/init.sh
 
@@ -19,8 +27,8 @@ function dotfiles_init() {
   source ${DOTFILES}/etc/dotfiles/install-functions.sh
 
   # Source user-specific tweaks
-  if [ -f ${HOME}/.dotfilesrc_local ]; then
-     source ${HOME}/.dotfilesrc_local
+  if [ -f ${DOTFILES_POST_HOOK} ]; then
+     source ${DOTFILES_POST_HOOK}
   fi
 }
 
