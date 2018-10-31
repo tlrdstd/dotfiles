@@ -23,6 +23,6 @@ export DISPLAY=:0
 # Figure out where Powerline is installed on this host
 powerline_root_path='/tmp/.powerline_root'
 if [[ (! -e ${powerline_root_path}) || (! -s ${powerline_root_path}) ]]; then
-  pip3 show powerline-status --disable-pip-version-check | grep Location | cut -f2 -d' ' > ${powerline_root_path}
+  pip3 show powerline-status --disable-pip-version-check 2>/dev/null | grep Location | cut -f2 -d' ' > ${powerline_root_path}
 fi
 export POWERLINE_ROOT=$(cat ${powerline_root_path})
