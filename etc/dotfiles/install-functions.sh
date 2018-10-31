@@ -17,11 +17,11 @@ function dotfiles_backup() {
 }
 
 function dotfiles_backup_and_link() {
-  ABSOLUTE_SOURCE=$1
+  RELATIVE_SOURCE=$1
   TARGET=$2
 
-  DOTFILES_BASEDIR=`basename ${DOTFILES}`
-  RELATIVE_SOURCE=`echo ${ABSOLUTE_SOURCE} | sed -e "s|^${DOTFILES}/|${DOTFILES_BASEDIR}/|"`
+  DOTFILES_PARENT_DIR=`dirname ${DOTFILES}`
+  ABSOLUTE_SOURCE=`readlink -f ${DOTFILES_PARENT_DIR}/${RELATIVE_SOURCE}`
 
   dotfiles_backup ${TARGET}
   echo "linking ${ABSOLUTE_SOURCE} to ${TARGET} as ${RELATIVE_SOURCE}"
@@ -35,27 +35,33 @@ function dotfiles_install_submodules() {
 }
 
 function dotfiles_install_conf_files() {
-  for dotfile in $(find ${DOTFILES}/conf -maxdepth 1 -type f); do
-    SOURCE=${dotfile}
+  DOTFILES_BASEDIR=`basename ${DOTFILES}`
+
+  pushd ${DOTFILES}
+
+  for dotfile in $(find conf -maxdepth 1 -type f); do
+    SOURCE=${DOTFILES_BASEDIR}/${dotfile}
     TARGET=${HOME}/.`basename ${dotfile}`
 
     dotfiles_backup_and_link ${SOURCE} ${TARGET}
   done
 
-  for dotfile in $(find ${DOTFILES}/conf -maxdepth 1 -type l); do
-    SOURCE=${dotfile}
+  for dotfile in $(find conf -maxdepth 1 -type l); do
+    SOURCE=${DOTFILES_BASEDIR}/${dotfile}
     TARGET=${HOME}/.`basename ${dotfile}`
 
     dotfiles_backup_and_link ${SOURCE} ${TARGET}
   done
 
-  for configdir in $(find ${DOTFILES}/conf/config -maxdepth 1 -mindepth 1 -type d); do
-    SOURCE=${configdir}
+  for configdir in $(find conf/config -maxdepth 1 -mindepth 1 -type d); do
+    SOURCE=../${DOTFILES_BASEDIR}/${configdir}
     TARGET=${HOME}/.config/`basename ${configdir}`
 
     mkdir -pv $(dirname ${TARGET})
     dotfiles_backup_and_link ${SOURCE} ${TARGET}
   done
+
+  popd
 }
 
 function dotfiles_install_tmp_dir() {
@@ -79,10 +85,12 @@ function dotfiles_install_vim_fonts() {
 # integrate with bootstrap project, if present
 # otherwise, take over the rc file for all supported shells (.bashrc, .zshrc, etc)
 function dotfiles_install_shellrc() {
+  DOTFILES_BASEDIR=`basename ${DOTFILES}`
+
   # Find all supported/configurable shells
   for shell in $(echo 'bash sh zsh'); do
     # Take over the rc file for this shell
-    dotfiles_backup_and_link ${DOTFILES}/conf/dotfilesrc ${HOME}/.${shell}rc
+    dotfiles_backup_and_link ${DOTFILES_BASEDIR}/conf/dotfilesrc ${HOME}/.${shell}rc
   done
 
   # Activate dotfiles for this shell
