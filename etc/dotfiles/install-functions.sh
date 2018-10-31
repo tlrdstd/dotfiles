@@ -9,11 +9,18 @@ function dotfiles_backup() {
     rm ${TARGET}
   fi
 
-  # if the file/folder still exists, back it up
+  # if the file/folder still exists, deal with it
   if [ -e ${TARGET} ]; then
-    BAK=${TARGET}.${dotfiles_timestamp}
-    echo "backing up ${TARGET} to ${BAK}"
-    mv ${TARGET} ${BAK}
+    if [ "${DOTFILES_BACKUP}" = "false" ]; then
+      # backups are disabled - nuke the old version
+      echo "Not backing up ${TARGET}"
+      rm -rfv ${TARGET}
+    else
+      # backups are enabled - preserve those bits
+      BAK=${TARGET}.${dotfiles_timestamp}
+      echo "backing up ${TARGET} to ${BAK}"
+      mv ${TARGET} ${BAK}
+    fi
   fi
 }
 
