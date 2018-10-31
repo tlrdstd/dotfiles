@@ -26,7 +26,7 @@ bindkey "^H" backward-delete-char
 bindkey "^U" backward-kill-line
 
 # Specify custom dotfiles ZSH completion path
-fpath=(~/.tmp/completion $fpath)
+fpath=(~/.config/zsh/completion $fpath)
 # Activate zsh completions engine
 autoload -Uz compinit
 compinit
