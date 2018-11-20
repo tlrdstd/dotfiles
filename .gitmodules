@@ -100,3 +100,6 @@
 [submodule "vim/bundle/vim-tmux-navigator"]
 	path = vim/bundle/vim-tmux-navigator
 	url = ../../christoomey/vim-tmux-navigator
+[submodule "vim/bundle/vim-lastplace"]
+	path = vim/bundle/vim-lastplace
+	url = ../../farmergreg/vim-lastplace.git
