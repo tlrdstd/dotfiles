@@ -46,6 +46,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-surround'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'maxbrunsfeld/vim-yankstack'
+Plugin 'farmergreg/vim-lastplace'
 
 call vundle#end()
 filetype plugin indent on
