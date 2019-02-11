@@ -20,7 +20,6 @@ Plugin 'haya14busa/incsearch.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'powerline/fonts'
 Plugin 'ervandew/supertab'
-Plugin 'vim-syntastic/syntastic'
 Plugin 'godlygeek/tabular'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -47,6 +46,9 @@ Plugin 'tpope/vim-surround'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'maxbrunsfeld/vim-yankstack'
 Plugin 'farmergreg/vim-lastplace'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'w0rp/ale'
 
 call vundle#end()
 filetype plugin indent on
@@ -74,6 +76,7 @@ colorscheme solarized
 " Airline status bar - make it look better
 let g:airline_theme='solarized'
 let g:airline_powerline_fonts=1
+let g:airline#extensions#ale#enabled = 1
 
 " netrw - force better sorting
 let g:netrw_sort_options = "i" " case-insensitive netrw directory listings
@@ -82,8 +85,12 @@ let g:netrw_sort_sequence='[\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,\~\=\*$,
 let g:netrw_sort_sequence='[\/]$,\<core\%(\.\d\+\)\=\>,*,\.swp$,\.bak$,\.orig$,\~$'
 let g:netrw_sort_sequence='[\/]$,*,\.swp$,\.bak$,\.orig$,\~$'
 
-" syntastic - squash useless/annoying complaints
-let g:syntastic_eruby_ruby_quiet_messages = {'regex': 'possibly useless use of a variable in void context'}
+" ale - enable ale-hover ballons
+let g:ale_set_balloons = 1
+let g:ale_fixers = {
+\   'javascript': ['prettier', 'eslint'],
+\   'css': ['prettier'],
+\}
 
 " vim-yankstack - ensure plugin is active before yank/delete key mappings change
 call yankstack#setup()
