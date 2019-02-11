@@ -65,3 +65,7 @@
 
 [push]
   push = simple
+  default = current
+
+[http]
+  sslVerify = true
