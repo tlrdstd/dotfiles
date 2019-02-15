@@ -77,6 +77,12 @@ function dotfiles_install_tmp_dir() {
   dotfiles_backup_and_link ${SOURCE} ${TARGET}
 }
 
+function dotfiles_install_ssh_dir() {
+  mkdir -pv ${HOME}/.ssh
+  touch ${HOME}/.ssh/config
+  chmod 0600 ${HOME}/.ssh/config
+}
+
 function dotfiles_install_vim_dir() {
   SOURCE=${DOTFILES_BASEDIR}/vim
   TARGET=${HOME}/.vim
@@ -103,6 +109,7 @@ function dotfiles_install_shellrc() {
 
 function dotfiles_install() {
   pushd ~
+  dotfiles_install_ssh_dir
   dotfiles_install_submodules
   dotfiles_install_conf_files
   dotfiles_install_tmp_dir

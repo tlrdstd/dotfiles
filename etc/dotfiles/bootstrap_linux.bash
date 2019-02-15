@@ -2,6 +2,8 @@
 
 # install linuxbrew
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
+
 if which yum > /dev/null ; then
   sudo yum groupinstall 'Development Tools'
 else
