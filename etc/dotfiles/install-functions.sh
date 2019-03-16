@@ -94,8 +94,7 @@ function dotfiles_install_vim_fonts() {
   ${DOTFILES}/vim/bundle/fonts/install.sh
 }
 
-# integrate with bootstrap project, if present
-# otherwise, take over the rc file for all supported shells (.bashrc, .zshrc, etc)
+# take over the rc file for all supported shells (.bashrc, .zshrc, etc)
 function dotfiles_install_shellrc() {
   # Find all supported/configurable shells
   for shell in $(echo 'bash sh zsh'); do
