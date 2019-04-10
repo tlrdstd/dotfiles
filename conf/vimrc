@@ -183,6 +183,9 @@ sunmap e
 map <S-Enter> O<ESC> " inserts new line above current line without going into insert mode
 map <Enter> o<ESC>   " inserts new line below current line without going into insert mode
 
+" Toggle line numbers/listchars on/off for easy mouse-based copy/paste
+:nnoremap <F12> :set number!<CR>:set list!<CR>
+
 " Ruby editing shortcuts
 noremap <leader>bb obinding.pry<esc>
 noremap <leader>BB Obinding.pry<esc>
