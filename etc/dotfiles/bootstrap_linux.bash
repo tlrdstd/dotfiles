@@ -29,6 +29,7 @@ brew install openssl # must come before curl - https://github.com/Linuxbrew/brew
 brew install curl --with-gssapi --with-libssh2
 brew install git
 brew install gtk+
+brew install jq
 brew install jdk
 brew install perl
 brew install postgresql
