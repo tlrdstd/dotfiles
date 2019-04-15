@@ -109,6 +109,9 @@
 [submodule "vim/bundle/vim-jsx"]
 	path = vim/bundle/vim-jsx
 	url = ../../mxw/vim-jsx
+[submodule "vim/bundle/vim-graphql"]
+	path = vim/bundle/vim-graphql
+	url = ../../jparise/vim-graphql
 [submodule "etc/zsh/oh-my-zsh-custom/themes/powerlevel9k"]
 	path = etc/zsh/oh-my-zsh-custom/themes/powerlevel9k
 	url = git@github.com:bhilburn/powerlevel9k.git
