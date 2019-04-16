@@ -8,13 +8,13 @@ esac
 export EDITOR=vim
 
 # Inject Homebrew into the PATH
-if [ "${DOTFILES_OS}" == Mac ]; then
+if [ "${DOTFILES_OS}" = "Mac" ]; then
   export PATH=/usr/local/opt/coreutils/libexec/gnubin:${PATH}
   export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}
 fi
 
 # Inject Linuxbrew into the PATH
-if [ "${DOTFILES_OS}" == Linux ]; then
+if [ "${DOTFILES_OS}" = "Linux" ]; then
   export PATH=/home/linuxbrew/.linuxbrew/bin:~/.linuxbrew/bin:${PATH}
   export PATH=/home/linuxbrew/.linuxbrew/sbin:~/.linuxbrew/sbin:${PATH}
   export MANPATH=/home/linuxbrew/.linuxbrew/share/man:~/.linuxbrew/share/man:${MANPATH}
