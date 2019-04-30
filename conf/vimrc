@@ -134,6 +134,7 @@ set matchpairs=(:),{:},[:],<:>        " valid characters to start/end a highligh
 set matchtime=2                       " show matching parens for x tenths of a second
 set mousehide                         " hide the mouse when typing
 set nobackup                          " no auto-backups (I use git)
+set nofoldenable                      " disable folding
 set noswapfile                        " no .swp files
 set nowrap                            " don't wrap long lines
 set nowritebackup                     " no backup before writing
