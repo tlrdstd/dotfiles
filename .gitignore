@@ -1,4 +1,4 @@
-etc/tmp/undodir
-etc/tmp/ctrlp
-etc/tmp/.histfile
-vim/.netrwhist
+homedir/shared/tmp/undodir
+homedir/shared/tmp/ctrlp
+homedir/shared/tmp/.histfile
+homedir/vim/.netrwhist

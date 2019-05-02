@@ -45,36 +45,42 @@ function dotfiles_install_submodules() {
 function dotfiles_install_conf_files() {
   pushd ${DOTFILES}
 
-  for dotfile in $(find conf -maxdepth 1 -type f); do
+  # symlink all dotfiles
+  for dotfile in $(find homedir -maxdepth 1 -type f); do
     SOURCE=${DOTFILES_BASEDIR}/${dotfile}
     TARGET=${HOME}/.`basename ${dotfile}`
 
     dotfiles_backup_and_link ${SOURCE} ${TARGET}
   done
 
-  for dotfile in $(find conf -maxdepth 1 -type l); do
+  # symlink all symlinks
+  for dotfile in $(find homedir -maxdepth 1 -type l); do
     SOURCE=${DOTFILES_BASEDIR}/${dotfile}
     TARGET=${HOME}/.`basename ${dotfile}`
 
     dotfiles_backup_and_link ${SOURCE} ${TARGET}
   done
 
-  for configdir in $(find conf/config -maxdepth 1 -mindepth 1 -type d); do
-    SOURCE=../${DOTFILES_BASEDIR}/${configdir}
-    TARGET=${HOME}/.config/`basename ${configdir}`
+  # symlink all top-level directories that we control
+  for dotfile in $(find homedir -maxdepth 1 -type d -not -path homedir/shared); do
+    SOURCE=${DOTFILES_BASEDIR}/${dotfile}
+    TARGET=${HOME}/.`basename ${dotfile}`
 
-    mkdir -pv $(dirname ${TARGET})
     dotfiles_backup_and_link ${SOURCE} ${TARGET}
+  done
+
+  # symlink the contents of all shared directories
+  for shareddir in $(find homedir/shared -maxdepth 1 -mindepth 1 -type d); do
+    for subdir in $(find ${shareddir} -maxdepth 1 -mindepth 1 -type d); do
+      SOURCE=../${DOTFILES_BASEDIR}/${subdir}
+      TARGET=${HOME}/.`basename ${shareddir}`/`basename ${subdir}`
+
+      mkdir -pv $(dirname ${TARGET})
+      dotfiles_backup_and_link ${SOURCE} ${TARGET}
+    done
   done
 
   popd
-}
-
-function dotfiles_install_tmp_dir() {
-  SOURCE=${DOTFILES_BASEDIR}/etc/tmp
-  TARGET=${HOME}/.tmp
-
-  dotfiles_backup_and_link ${SOURCE} ${TARGET}
 }
 
 function dotfiles_install_ssh_dir() {
@@ -83,15 +89,8 @@ function dotfiles_install_ssh_dir() {
   chmod 0600 ${HOME}/.ssh/config
 }
 
-function dotfiles_install_vim_dir() {
-  SOURCE=${DOTFILES_BASEDIR}/vim
-  TARGET=${HOME}/.vim
-
-  dotfiles_backup_and_link ${SOURCE} ${TARGET}
-}
-
 function dotfiles_install_vim_fonts() {
-  ${DOTFILES}/vim/bundle/fonts/install.sh
+  ${DOTFILES}/homedir/vim/bundle/fonts/install.sh
 }
 
 # take over the rc file for all supported shells (.bashrc, .zshrc, etc)
@@ -99,7 +98,7 @@ function dotfiles_install_shellrc() {
   # Find all supported/configurable shells
   for shell in $(echo 'bash sh zsh'); do
     # Take over the rc file for this shell
-    dotfiles_backup_and_link ${DOTFILES_BASEDIR}/conf/dotfilesrc ${HOME}/.${shell}rc
+    dotfiles_backup_and_link ${HOME}/.dotfilesrc ${HOME}/.${shell}rc
   done
 
   # Activate dotfiles for this shell
@@ -111,8 +110,6 @@ function dotfiles_install() {
   dotfiles_install_ssh_dir
   dotfiles_install_submodules
   dotfiles_install_conf_files
-  dotfiles_install_tmp_dir
-  dotfiles_install_vim_dir
   dotfiles_install_vim_fonts
   dotfiles_install_shellrc
   popd

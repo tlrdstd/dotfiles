@@ -1,116 +1,116 @@
 [submodule "vim/bundle/Vundle.vim"]
-	path = vim/bundle/Vundle.vim
+	path = homedir/vim/bundle/Vundle.vim
 	url = ../../VundleVim/Vundle.vim
 [submodule "vim/bundle/CamelCaseMotion"]
-	path = vim/bundle/CamelCaseMotion
+	path = homedir/vim/bundle/CamelCaseMotion
 	url = ../../bkad/CamelCaseMotion.git
 [submodule "vim/bundle/ctrlp.vim"]
-	path = vim/bundle/ctrlp.vim
+	path = homedir/vim/bundle/ctrlp.vim
 	url = ../../kien/ctrlp.vim.git
 [submodule "vim/bundle/fonts"]
-	path = vim/bundle/fonts
+	path = homedir/vim/bundle/fonts
 	url = ../../powerline/fonts.git
 [submodule "vim/bundle/nerdtree"]
-	path = vim/bundle/nerdtree
+	path = homedir/vim/bundle/nerdtree
 	url = ../../scrooloose/nerdtree.git
 [submodule "vim/bundle/supertab"]
-	path = vim/bundle/supertab
+	path = homedir/vim/bundle/supertab
 	url = ../../ervandew/supertab.git
 [submodule "vim/bundle/tabular"]
-	path = vim/bundle/tabular
+	path = homedir/vim/bundle/tabular
 	url = ../../godlygeek/tabular.git
 [submodule "vim/bundle/vim-airline"]
-	path = vim/bundle/vim-airline
+	path = homedir/vim/bundle/vim-airline
 	url = ../../vim-airline/vim-airline.git
 [submodule "vim/bundle/vim-airline-themes"]
-	path = vim/bundle/vim-airline-themes
+	path = homedir/vim/bundle/vim-airline-themes
 	url = ../../vim-airline/vim-airline-themes.git
 [submodule "vim/bundle/vim-coffee-script"]
-	path = vim/bundle/vim-coffee-script
+	path = homedir/vim/bundle/vim-coffee-script
 	url = ../../kchmck/vim-coffee-script.git
 [submodule "vim/bundle/vim-colors-solarized"]
-	path = vim/bundle/vim-colors-solarized
+	path = homedir/vim/bundle/vim-colors-solarized
 	url = ../../altercation/vim-colors-solarized.git
 [submodule "vim/bundle/vim-cucumber"]
-	path = vim/bundle/vim-cucumber
+	path = homedir/vim/bundle/vim-cucumber
 	url = ../../tpope/vim-cucumber.git
 [submodule "vim/bundle/vim-dispatch"]
-	path = vim/bundle/vim-dispatch
+	path = homedir/vim/bundle/vim-dispatch
 	url = ../../tpope/vim-dispatch.git
 [submodule "vim/bundle/vim-easymotion"]
-	path = vim/bundle/vim-easymotion
+	path = homedir/vim/bundle/vim-easymotion
 	url = ../../easymotion/vim-easymotion.git
 [submodule "vim/bundle/vim-easyoperator-line"]
-	path = vim/bundle/vim-easyoperator-line
+	path = homedir/vim/bundle/vim-easyoperator-line
 	url = ../../haya14busa/vim-easyoperator-line.git
 [submodule "vim/bundle/vim-easyoperator-phrase"]
-	path = vim/bundle/vim-easyoperator-phrase
+	path = homedir/vim/bundle/vim-easyoperator-phrase
 	url = ../../haya14busa/vim-easyoperator-phrase.git
 [submodule "vim/bundle/vim-endwise"]
-	path = vim/bundle/vim-endwise
+	path = homedir/vim/bundle/vim-endwise
 	url = ../../tpope/vim-endwise.git
 [submodule "vim/bundle/vim-fugitive"]
-	path = vim/bundle/vim-fugitive
+	path = homedir/vim/bundle/vim-fugitive
 	url = ../../tpope/vim-fugitive.git
 [submodule "vim/bundle/vim-haml"]
-	path = vim/bundle/vim-haml
+	path = homedir/vim/bundle/vim-haml
 	url = ../../tpope/vim-haml.git
 [submodule "vim/bundle/vim-markdown"]
-	path = vim/bundle/vim-markdown
+	path = homedir/vim/bundle/vim-markdown
 	url = ../../plasticboy/vim-markdown.git
 [submodule "vim/bundle/vim-mkdir"]
-	path = vim/bundle/vim-mkdir
+	path = homedir/vim/bundle/vim-mkdir
 	url = ../../pbrisbin/vim-mkdir.git
 [submodule "vim/bundle/vim-multiple-cursors"]
-	path = vim/bundle/vim-multiple-cursors
+	path = homedir/vim/bundle/vim-multiple-cursors
 	url = ../../terryma/vim-multiple-cursors.git
 [submodule "vim/bundle/vim-over"]
-	path = vim/bundle/vim-over
+	path = homedir/vim/bundle/vim-over
 	url = ../../osyo-manga/vim-over.git
 [submodule "vim/bundle/vim-rails"]
-	path = vim/bundle/vim-rails
+	path = homedir/vim/bundle/vim-rails
 	url = ../../tpope/vim-rails.git
 [submodule "vim/bundle/vim-rake"]
-	path = vim/bundle/vim-rake
+	path = homedir/vim/bundle/vim-rake
 	url = ../../tpope/vim-rake.git
 [submodule "vim/bundle/vim-repeat"]
-	path = vim/bundle/vim-repeat
+	path = homedir/vim/bundle/vim-repeat
 	url = ../../tpope/vim-repeat.git
 [submodule "vim/bundle/vim-rspec"]
-	path = vim/bundle/vim-rspec
+	path = homedir/vim/bundle/vim-rspec
 	url = ../../thoughtbot/vim-rspec.git
 [submodule "vim/bundle/vim-ruby"]
-	path = vim/bundle/vim-ruby
+	path = homedir/vim/bundle/vim-ruby
 	url = ../../vim-ruby/vim-ruby.git
 [submodule "vim/bundle/vim-surround"]
-	path = vim/bundle/vim-surround
+	path = homedir/vim/bundle/vim-surround
 	url = ../../tpope/vim-surround.git
 [submodule "vim/bundle/vim-yankstack"]
-	path = vim/bundle/vim-yankstack
+	path = homedir/vim/bundle/vim-yankstack
 	url = ../../maxbrunsfeld/vim-yankstack.git
 [submodule "vim/bundle/incsearch.vim"]
-	path = vim/bundle/incsearch.vim
+	path = homedir/vim/bundle/incsearch.vim
 	url = ../../haya14busa/incsearch.vim.git
 [submodule "etc/zsh/oh-my-zsh"]
 	path = etc/zsh/oh-my-zsh
 	url = ../../robbyrussell/oh-my-zsh.git
 [submodule "vim/bundle/vim-tmux-navigator"]
-	path = vim/bundle/vim-tmux-navigator
+	path = homedir/vim/bundle/vim-tmux-navigator
 	url = ../../christoomey/vim-tmux-navigator
 [submodule "vim/bundle/vim-lastplace"]
-	path = vim/bundle/vim-lastplace
+	path = homedir/vim/bundle/vim-lastplace
 	url = ../../farmergreg/vim-lastplace.git
 [submodule "vim/bundle/ale"]
-	path = vim/bundle/ale
+	path = homedir/vim/bundle/ale
 	url = ../../w0rp/ale
 [submodule "vim/bundle/vim-javascript"]
-	path = vim/bundle/vim-javascript
+	path = homedir/vim/bundle/vim-javascript
 	url = ../../pangloss/vim-javascript
 [submodule "vim/bundle/vim-jsx"]
-	path = vim/bundle/vim-jsx
+	path = homedir/vim/bundle/vim-jsx
 	url = ../../mxw/vim-jsx
 [submodule "vim/bundle/vim-graphql"]
-	path = vim/bundle/vim-graphql
+	path = homedir/vim/bundle/vim-graphql
 	url = ../../jparise/vim-graphql
 [submodule "etc/zsh/oh-my-zsh-custom/themes/powerlevel9k"]
 	path = etc/zsh/oh-my-zsh-custom/themes/powerlevel9k
