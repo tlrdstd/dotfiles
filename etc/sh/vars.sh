@@ -6,6 +6,7 @@ esac
 
 # Global shell config variables
 export EDITOR=vim
+export TERM=xterm-256color
 
 # Inject Homebrew into the PATH
 if [ "${DOTFILES_OS}" = "Mac" ]; then
