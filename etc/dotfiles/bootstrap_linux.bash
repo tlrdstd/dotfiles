@@ -41,10 +41,6 @@ sed -i.bak 's/enable-gui=no/enable-gui/' ~/.linuxbrew/Homebrew/Library/Taps/home
 brew install vim --with-override-system-vi --with-client-server --with-lua --with-python3 --with-tcl --with-gettext --enable-gui
 brew install zsh
 
-pip2 install --upgrade pip setuptools
-pip3 install --upgrade pip setuptools wheel
-pip3 install powerline-status
-
 # install nvm and node
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 nvm install v8.12.0
