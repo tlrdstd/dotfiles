@@ -98,7 +98,7 @@ function dotfiles_install_shellrc() {
   # Find all supported/configurable shells
   for shell in $(echo 'bash sh zsh'); do
     # Take over the rc file for this shell
-    dotfiles_backup_and_link ${HOME}/.dotfilesrc ${HOME}/.${shell}rc
+    dotfiles_backup_and_link .dotfilesrc ${HOME}/.${shell}rc
   done
 
   # Activate dotfiles for this shell
