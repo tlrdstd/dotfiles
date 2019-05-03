@@ -3,7 +3,7 @@
 
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_first_and_last
-POWERLEVEL9K_MODE=nerdfont-complete
+#POWERLEVEL9K_MODE=nerdfont-complete
 POWERLEVEL9K_HIDE_BRANCH_ICON=true
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs time command_execution_time)
