@@ -12,6 +12,7 @@ fi
 
 # build modern gcc (and glibc) using the pre-installed gcc-4.4
 # per https://github.com/Linuxbrew/brew/wiki/CentOS6
+# TODO - skip this if installed to /home/linuxbrew
 if [[ "$(gcc -dumpversion)" == '4.4.6' ]]; then
   HOMEBREW_NO_AUTO_UPDATE=1 HOMEBREW_BUILD_FROM_SOURCE=1 brew install gcc --without-glibc
   HOMEBREW_NO_AUTO_UPDATE=1 brew install glibc
