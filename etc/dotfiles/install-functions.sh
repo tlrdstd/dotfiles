@@ -89,8 +89,8 @@ function dotfiles_install_ssh_dir() {
   chmod 0600 ${HOME}/.ssh/config
 }
 
-function dotfiles_install_vim_fonts() {
-  ${DOTFILES}/homedir/vim/bundle/fonts/install.sh
+function dotfiles_install_powerline_fonts() {
+  ${DOTFILES}/homedir/powerline/fonts/install.sh
 }
 
 # take over the rc file for all supported shells (.bashrc, .zshrc, etc)
@@ -110,7 +110,7 @@ function dotfiles_install() {
   dotfiles_install_ssh_dir
   dotfiles_install_submodules
   dotfiles_install_conf_files
-  dotfiles_install_vim_fonts
+  dotfiles_install_powerline_fonts
   dotfiles_install_shellrc
   popd
 }
