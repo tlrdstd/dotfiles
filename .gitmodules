@@ -124,3 +124,6 @@
 [submodule "homedir/vim/pack/plugins/start/ale"]
 	path = homedir/vim/pack/plugins/start/ale
 	url = git@github.com:dense-analysis/ale.git
+[submodule "homedir/vim/pack/plugins/start/coc"]
+	path = homedir/vim/pack/plugins/start/coc
+	url = git@github.com:neoclide/coc.nvim.git
