@@ -79,18 +79,12 @@
 [submodule "homedir/vim/pack/plugins/start/incsearch.vim"]
 	path = homedir/vim/pack/plugins/start/incsearch.vim
 	url = git@github.com:haya14busa/incsearch.vim
-[submodule "zsh/oh-my-zsh"]
-	path = etc/zsh/oh-my-zsh
-	url = git@github.com:robbyrussell/oh-my-zsh
 [submodule "homedir/vim/pack/plugins/start/vim-tmux-navigator"]
 	path = homedir/vim/pack/plugins/start/vim-tmux-navigator
 	url = git@github.com:christoomey/vim-tmux-navigator
 [submodule "homedir/vim/pack/plugins/start/vim-lastplace"]
 	path = homedir/vim/pack/plugins/start/vim-lastplace
 	url = git@github.com:farmergreg/vim-lastplace
-[submodule "homedir/vim/pack/plugins/start/ale"]
-	path = homedir/vim/pack/plugins/start/ale
-	url = git@github.com:w0rp/ale
 [submodule "homedir/vim/pack/plugins/start/vim-javascript"]
 	path = homedir/vim/pack/plugins/start/vim-javascript
 	url = git@github.com:pangloss/vim-javascript
@@ -100,21 +94,6 @@
 [submodule "homedir/vim/pack/plugins/start/vim-graphql"]
 	path = homedir/vim/pack/plugins/start/vim-graphql
 	url = git@github.com:jparise/vim-graphql
-[submodule "zsh/powerlevel9k"]
-	path = etc/zsh/oh-my-zsh-custom/themes/powerlevel9k
-	url = git@github.com:bhilburn/powerlevel9k
-[submodule "tmux/tmux-logging"]
-	path = homedir/tmux/plugins/tmux-logging
-	url = git@github.com:tmux-plugins/tmux-logging
-[submodule "tmux/tpm"]
-	path = homedir/tmux/plugins/tpm
-	url = git@github.com:tmux-plugins/tpm
-[submodule "homedir/vim/pack/plugins/start/CamelCaseMotion"]
-	path = homedir/vim/pack/plugins/start/CamelCaseMotion
-	url = git@github.com:bkad/CamelCaseMotion
-[submodule "homedir/vim/pack/plugins/start/ale"]
-	path = homedir/vim/pack/plugins/start/ale
-	url = git@github.com:w0rp/ale
 [submodule "homedir/powerline/fonts"]
 	path = homedir/powerline/fonts
 	url = git@github.com:powerline/fonts
@@ -127,3 +106,21 @@
 [submodule "homedir/vim/pack/plugins/start/ctrlsf.vim"]
 	path = homedir/vim/pack/plugins/start/ctrlsf.vim
 	url = git@github.com:dyng/ctrlsf.vim.git
+[submodule "etc/zsh/oh-my-zsh"]
+	path = etc/zsh/oh-my-zsh
+	url = git@github.com:robbyrussell/oh-my-zsh.git
+[submodule "etc/zsh/oh-my-zsh-custom/themes/powerlevel9k"]
+	path = etc/zsh/oh-my-zsh-custom/themes/powerlevel9k
+	url = git@github.com:bhilburn/powerlevel9k
+[submodule "homedir/tmux/plugins/tmux-logging"]
+	path = homedir/tmux/plugins/tmux-logging
+	url = git@github.com:tmux-plugins/tmux-logging
+[submodule "homedir/tmux/plugins/tpm"]
+	path = homedir/tmux/plugins/tpm
+	url = git@github.com:tmux-plugins/tpm
+[submodule "homedir/vim/pack/plugins/start/CamelCaseMotion"]
+	path = homedir/vim/pack/plugins/start/CamelCaseMotion
+	url = git@github.com:bkad/CamelCaseMotion
+[submodule "homedir/vim/pack/plugins/start/ale"]
+	path = homedir/vim/pack/plugins/start/ale
+	url = git@github.com:dense-analysis/ale.git
