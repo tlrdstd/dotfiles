@@ -1,3 +1,6 @@
+" Housekeeping
+" ------------
+
 " When vimrc is edited, reload it
 autocmd! bufwritepost .vimrc source ~/.vimrc
 autocmd! bufwritepost vimrc source ~/.vimrc
@@ -6,53 +9,17 @@ set nocompatible " don't be limited to vi-only settings
 
 let mapleader=' ' " set leader key
 
-" Vundle config
-" -------------
+" Plugin loading
+" --------------
 
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#begin()
+" Tell Vim's plugin manager to load the plugins and update
+" the runtimepath before we proceed to plugin configuration
+packloadall
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'bkad/CamelCaseMotion'
-Plugin 'kien/ctrlp.vim'
-Plugin 'haya14busa/incsearch.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'powerline/fonts'
-Plugin 'ervandew/supertab'
-Plugin 'godlygeek/tabular'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'tpope/vim-cucumber'
-Plugin 'tpope/vim-dispatch'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'haya14busa/vim-easyoperator-line'
-Plugin 'haya14busa/vim-easyoperator-phrase'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-haml'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'pbrisbin/vim-mkdir'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'osyo-manga/vim-over'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-rake'
-Plugin 'tpope/vim-repeat'
-Plugin 'thoughtbot/vim-rspec'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-surround'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'maxbrunsfeld/vim-yankstack'
-Plugin 'farmergreg/vim-lastplace'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-Plugin 'w0rp/ale'
-Plugin 'jparise/vim-graphql'
-
-call vundle#end()
-filetype plugin indent on
+" Enable the built-in vim filetype plugins
+filetype on " automatic filetype detection
+filetype plugin on " auto-load plugins based on current filetype
+filetype indent on " auto-load indentation rules based on current filetype
 
 " Plugin configs
 " --------------
@@ -92,6 +59,7 @@ let g:ale_fixers = {
 \   'javascript': ['prettier', 'eslint'],
 \   'css': ['prettier'],
 \}
+let g:ale_java_checkstyle_config = '~/.config/checkstyle/google_checks.xml'
 
 " vim-yankstack - ensure plugin is active before yank/delete key mappings change
 call yankstack#setup()
@@ -110,7 +78,7 @@ set background=dark                   " use dark Solarized theme
 set bufhidden=delete                  " close hidden buffers
 set cindent                           " use c-style auto-indentation
 set cinwords=if,else,while,do,for,switch,case,Module,def,Class " indent after
-set colorcolumn=100                   " color the 100th column of text
+set colorcolumn=120                   " color the 120th column of text
 set cursorline                        " highlight active line
 set diffopt+=icase                    " case-insensitive diff
 set diffopt+=iwhite                   " ignore whitespace in diff
