@@ -38,7 +38,7 @@ function dotfiles_backup_and_link() {
 
 function dotfiles_install_submodules() {
   pushd ${DOTFILES}
-  git submodule update --recursive --init
+  git submodule update --recursive --init --remote
   popd
 }
 
