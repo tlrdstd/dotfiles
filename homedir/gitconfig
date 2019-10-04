@@ -5,6 +5,7 @@
   cp = cherry-pick
   d = diff
   dump = cat-file -p
+  f = fetch
   hist = log --graph --pretty=format:'%C(yellow)%h %C(red)|%C(yellow)%d%C(white) %s [%C(green)%an%C(white)] %C(cyan)%ad%C(white)' --date=relative
   histt = log --graph --pretty=format:\"%C(yellow)%h %C(white)%ad %C(red)|%C(white) %s%d [%C(green)%an%C(white)]\" --date=short
   review = log -p
@@ -38,7 +39,7 @@
 [core]
   whitespace = trailing-space,space-before-tab
   pager = less -FMRiX
-  excludesfile = ${HOME}/.config/git/excludes
+  excludesfile = ~/.config/git/excludes
 
 [diff]
   mnemonicprefix = true
