@@ -67,3 +67,6 @@ brew doctor
 # install nvm and node
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 nvm install v8.12.0
+
+# enable key-repeating in VSCode
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
