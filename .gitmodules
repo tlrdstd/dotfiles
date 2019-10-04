@@ -124,3 +124,6 @@
 [submodule "homedir/vim/pack/plugins/start/vim-airline-themes"]
 	path = homedir/vim/pack/plugins/start/vim-airline-themes
 	url = git@github.com:vim-airline/vim-airline-themes
+[submodule "homedir/vim/pack/plugins/start/ctrlsf.vim"]
+	path = homedir/vim/pack/plugins/start/ctrlsf.vim
+	url = git@github.com:dyng/ctrlsf.vim.git
