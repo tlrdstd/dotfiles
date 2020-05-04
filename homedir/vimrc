@@ -64,6 +64,9 @@ let g:ale_java_checkstyle_config = '~/.config/checkstyle/google_checks.xml'
 " vim-yankstack - ensure plugin is active before yank/delete key mappings change
 call yankstack#setup()
 
+" install coc.nvim plugins on-demand
+let g:coc_global_extensions='coc-java'
+
 " Vim configs
 " -----------
 
@@ -110,7 +113,7 @@ set nojoinspaces                      " do not insert extra whitespace when join
 set number                            " display line numbers
 set regexpengine=2                    " use newer, faster regex engine (mostly for Ctrl-P speed)
 set ruler                             " show the cursor position all the time
-set shiftwidth=2                      " auto-indent by this many spaces
+set shiftwidth=4                      " auto-indent by this many spaces
 set showcmd                           " display incomplete commands
 set showmatch                         " show matching braces when selected
 set sidescroll=5                      " scroll horizontally by this many columns
@@ -154,7 +157,7 @@ map <S-Enter> O<ESC> " inserts new line above current line without going into in
 map <Enter> o<ESC>   " inserts new line below current line without going into insert mode
 
 " Toggle line numbers/listchars on/off for easy mouse-based copy/paste
-:nnoremap <F12> :set number!<CR>:set list!<CR>
+:nnoremap <F12> :set number!<CR>:set list!<CR>:ALEToggle<CR>
 
 " Ruby editing shortcuts
 noremap <leader>bb obinding.pry<esc>
