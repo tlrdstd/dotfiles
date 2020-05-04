@@ -32,6 +32,7 @@ brew install git
 brew install gtk+
 brew install jq
 brew install jdk
+brew install node
 brew install perl
 brew install postgresql
 brew install python
