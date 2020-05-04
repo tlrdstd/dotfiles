@@ -16,10 +16,11 @@ fi
 
 # Inject Linuxbrew into the PATH
 if [ "${DOTFILES_OS}" = "Linux" ]; then
-  export PATH=/home/linuxbrew/.linuxbrew/bin:~/.linuxbrew/bin:${PATH}
-  export PATH=/home/linuxbrew/.linuxbrew/sbin:~/.linuxbrew/sbin:${PATH}
-  export MANPATH=/home/linuxbrew/.linuxbrew/share/man:~/.linuxbrew/share/man:${MANPATH}
-  export INFOPATH=/home/linuxbrew/.linuxbrew/share/info:~/.linuxbrew/share/info:${INFOPATH}
+  LINUXBREW_HOME=$(/home/linuxbrew/.linuxbrew/bin/brew --prefix)
+  export PATH=$LINUXBREW_HOME/bin:${PATH}
+  export PATH=$LINUXBREW_HOME/sbin:${PATH}
+  export MANPATH=$LINUXBREW_HOME/share/man:${MANPATH}
+  export INFOPATH=$LINUXBREW_HOME/share/info:${INFOPATH}
 fi
 
 # History management
