@@ -30,3 +30,6 @@ fpath=(~/.config/zsh/completion $fpath)
 # Activate zsh completions engine
 autoload -Uz compinit
 compinit
+
+# enable fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

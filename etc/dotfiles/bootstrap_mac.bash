@@ -20,6 +20,7 @@ brew install coreutils
 brew install diffutils
 brew install ed
 brew install findutils
+brew install fzf
 brew install gawk
 brew install git
 brew install gnu-indent

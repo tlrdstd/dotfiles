@@ -28,6 +28,7 @@ brew install ag
 brew install bash
 brew install openssl # must come before curl - https://github.com/Linuxbrew/brew/wiki/FAQ#why-does-curl-fail
 brew install curl --with-gssapi --with-libssh2
+brew install fzf
 brew install git
 brew install gtk+
 brew install jq

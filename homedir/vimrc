@@ -278,6 +278,9 @@ nnoremap <C-Tab> :tabnext<CR>       " next tab (overrides mswin.vim)
 nnoremap <C-S-Tab> :tabprevious<CR> " previous tab
 nmap <C-t> :tabnew<CR>              " new tab
 
+" enable fzf
+set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
+
 " import user/machine specific tweaks
 if filereadable(expand("~/.vimrc_local"))
   autocmd! bufwritepost .vimrc_local source ~/.vimrc_local
