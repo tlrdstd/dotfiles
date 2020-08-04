@@ -64,6 +64,9 @@
   enabled = true
   autoupdate = true
 
+[pull]
+	rebase = true
+
 [push]
   push = simple
   default = current
