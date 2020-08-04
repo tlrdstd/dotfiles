@@ -33,6 +33,7 @@ brew install git
 brew install gtk+
 brew install jq
 brew install jdk
+brew install ncdu
 brew install node
 brew install perl
 brew install postgresql
