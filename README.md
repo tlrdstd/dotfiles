@@ -16,3 +16,9 @@
 # Other options
 * `etc/dircolors` contains optional `dircolors` configs from `gnome-terminal-colors-solarized`.
 Default in `conf/dircolors` is `ansi-dark`.
+
+# Updating bundled plugins (vim, tmux, zsh)
+
+`dotfiles_update` will handle it.
+
+Or targeted: `git submodule update --remote --recursive`
