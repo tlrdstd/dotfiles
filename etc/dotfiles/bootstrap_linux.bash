@@ -73,3 +73,13 @@ for type in Bold Light Medium Regular Retina; do
   "https://github.com/tonsky/FiraCode/blob/master/distr/ttf/FiraCode-${type}.ttf?raw=true";
 done
 fc-cache --verbose -f ~/.local/share/fonts
+
+toolbox install bemol
+toolbox install brazil-octane
+toolbox install brazil-third-party-tool
+toolbox install brazilcli
+toolbox install cloud-desktop
+toolbox install cr
+toolbox install gordian-knot
+toolbox install lpt
+toolbox install ripcli
