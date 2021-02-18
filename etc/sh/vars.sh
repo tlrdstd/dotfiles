@@ -34,4 +34,4 @@ export HISTFILESIZE=100000 # big shell command history file
 export HISTCONTROL=ignoredups:erasedups # avoid shell command history dups
 
 # Enable X11
-export DISPLAY=:0
+# export DISPLAY=:0
