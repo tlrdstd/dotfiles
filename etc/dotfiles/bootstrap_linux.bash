@@ -24,26 +24,44 @@ else
   brew install gcc
 fi
 
+brew install ack
 brew install ag
 brew install bash
 brew install openssl # must come before curl - https://github.com/Linuxbrew/brew/wiki/FAQ#why-does-curl-fail
 brew install curl --with-gssapi --with-libssh2
 brew install fzf
 brew install git
-brew install gtk+
+brew install gron
+# brew install gtk+
+brew install htop
 brew install jq
-brew install jdk
 brew install ncdu
 brew install node
+brew install openjdk@11
+brew link --force openjdk@11
 brew install perl
 brew install postgresql
 brew install python
 brew install python3
 brew install ruby
 brew install tmux
-sed -i.bak 's/enable-gui=no/enable-gui/' ~/.linuxbrew/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/vim.rb
-brew install vim --with-override-system-vi --with-client-server --with-lua --with-python3 --with-tcl --with-gettext --enable-gui
+# sed -i.bak 's/enable-gui=no/enable-gui/' ~/.linuxbrew/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/vim.rb
+brew install vim --with-override-system-vi --with-client-server --with-lua --with-python3 --with-tcl --with-gettext # --enable-gui
 brew install zsh
+
+# brew install xauth
+# https://w.amazon.com/index.php/CloudDeveloperDesktop/UserGuide/GUI
+# sudo yum install xrdp x11rdp xorgxrdp
+# eclim - WIP - depends on dotfiles_install
+# sudo yum install xorg-x11-server-Xvfb
+# pushd /workplace/distyler
+# wget http://mirrors.syringanetworks.net/eclipse/technology/epp/downloads/release/2019-06/R/eclipse-java-2019-06-R-linux-gtk-x86_64.tar.gz
+# tar -xfz eclipse-java-2019-06-R-linux-gtk-x86_64.tar.gz
+# wget https://github.com/ervandew/eclim/releases/download/2.8.0/eclim_2.8.0.bin && chmod +x eclim_2.8.0.bin
+# mkdir ~/.vim/bundle/eclim
+# # not sure about these plugins - want java and ruby
+# ./eclim_2.8.0.bin --yes --eclipse=/workplace/distyler/eclipse --vimfiles=~/.vim/bundle/eclim --plugins=jdt,ruby
+# popd
 
 # install nvm and node
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
