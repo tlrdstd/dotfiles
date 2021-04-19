@@ -10,6 +10,7 @@
   histt = log --graph --pretty=format:\"%C(yellow)%h %C(white)%ad %C(red)|%C(white) %s%d [%C(green)%an%C(white)]\" --date=short
   review = log -p
   m = merge --no-ff --no-edit
+  r = review
   pr = remote prune origin
   st = status
   type = cat-file -t
