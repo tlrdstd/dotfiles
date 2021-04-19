@@ -14,10 +14,6 @@ if [ "${DOTFILES_OS}" = "Mac" ]; then
   export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}
 fi
 
-# Disable Homebrew locale filtering (throws errors)
-# https://github.com/Linuxbrew/brew/issues/568
-export HOMEBREW_NO_ENV_FILTERING=1
-
 # Inject Linuxbrew into the PATH
 if [ "${DOTFILES_OS}" = "Linux" ]; then
   LINUXBREW_HOME=$(/home/linuxbrew/.linuxbrew/bin/brew --prefix)
