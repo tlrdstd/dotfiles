@@ -41,6 +41,7 @@ brew install openjdk@11
 brew link --force openjdk@11
 brew install perl
 brew install postgresql
+brew install pssh
 brew install python
 brew install python3
 brew install ruby
@@ -75,6 +76,7 @@ done
 fc-cache --verbose -f ~/.local/share/fonts
 
 toolbox install bemol
+toolbox install brazil-graph
 toolbox install brazil-octane
 toolbox install brazil-third-party-tool
 toolbox install brazilcli
