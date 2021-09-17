@@ -2,4 +2,6 @@
 .bemol/
 .classpath
 .project
+.factorypath
 .settings/
+.solargraph.yml
