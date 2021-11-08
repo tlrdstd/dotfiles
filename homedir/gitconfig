@@ -74,3 +74,6 @@
 
 [http]
   sslVerify = true
+
+[diff "pkgconfig"]
+	xfuncname = [-[:alpha:]]+.*=.*\\{
