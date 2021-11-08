@@ -71,3 +71,8 @@ brew doctor
 
 # enable key-repeating in VSCode
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+
+# Install the Amazon tap (one time use)
+brew tap amazon/amazon ssh://git.amazon.com/pkg/HomebrewAmazon
+brew update
+brew install mwinit
