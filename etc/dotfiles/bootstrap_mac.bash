@@ -6,19 +6,24 @@
 brew analytics off
 
 brew tap homebrew/cask
-brew tap caskroom/fonts
+brew tap caskroom/cask-fonts
 
 brew cask install xquartz
 # do not launch xterm on X11 startup
 defaults write org.macosforge.xquartz.X11 app_to_run /usr/bin/true
-brew cask install font-fira-code
 
-brew cask install rectangle
+# preferred development font
+brew install --cask font-fira-code
+
+# spotlight replacement for search/workflow improvement
+brew install --cask alfred
+
+# window management via keyboard shortcuts
+brew install --cask rectangle
 
 brew install ag
 brew install bash
 brew install binutils
-brew install coreutils
 brew install coreutils
 brew install diffutils
 brew install ed
@@ -28,16 +33,12 @@ brew install gawk
 brew install git
 brew install gnu-indent
 brew install gnu-sed
-brew install gnu-sed
 brew install gnu-tar
-brew install gnu-tar
-brew install gnu-which
 brew install gnu-which
 brew install gnutls
 brew install gpatch
 brew install gpg
 brew install grep
-brew install gzip
 brew install gzip
 brew install htop
 brew install iterm2
