@@ -2,3 +2,4 @@ homedir/shared/tmp/undodir
 homedir/shared/tmp/ctrlp
 homedir/shared/tmp/.histfile
 homedir/vim/.netrwhist
+**/*/.DS_Store
