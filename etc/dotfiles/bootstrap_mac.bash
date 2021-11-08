@@ -3,6 +3,8 @@
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
+brew analytics off
+
 brew tap homebrew/dupes
 brew tap homebrew/cask
 brew tap caskroom/fonts
@@ -11,6 +13,8 @@ brew cask install xquartz
 # do not launch xterm on X11 startup
 defaults write org.macosforge.xquartz.X11 app_to_run /usr/bin/true
 brew cask install font-fira-code
+
+brew cask install rectangle
 
 brew install ag
 brew install bash
@@ -64,10 +68,6 @@ brew link --overwrite macvim
 brew update
 brew upgrade
 brew doctor
-
-# install nvm and node
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-nvm install v8.12.0
 
 # enable key-repeating in VSCode
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
