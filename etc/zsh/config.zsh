@@ -28,8 +28,10 @@ bindkey "^U" backward-kill-line
 # Specify custom dotfiles ZSH completion path
 fpath=(~/.config/zsh/completion $fpath)
 # Activate zsh completions engine
-autoload -Uz compinit
-compinit
+autoload bashcompinit && bashcompinit
+autoload -Uz compinit && compinit
+
+complete -C '/apollo/env/AmazonAwsCli/bin/aws_completer' aws
 
 # enable fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
