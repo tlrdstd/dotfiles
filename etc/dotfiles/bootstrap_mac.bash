@@ -6,9 +6,11 @@
 brew analytics off
 
 brew tap homebrew/cask
-brew tap caskroom/cask-fonts
+brew tap homebrew/cask-fonts
 
-brew cask install xquartz
+# X11 client...that I never use anymore
+brew install --cask xquartz
+
 # do not launch xterm on X11 startup
 defaults write org.macosforge.xquartz.X11 app_to_run /usr/bin/true
 
@@ -20,6 +22,12 @@ brew install --cask alfred
 
 # window management via keyboard shortcuts
 brew install --cask rectangle
+
+# window management that restores windows depending on what monitor(s) are connected
+brew install --cask stay
+
+# convenient calculator, usable from Alfred
+brew install --cask numi
 
 brew install ag
 brew install bash
@@ -42,13 +50,14 @@ brew install grep
 brew install gzip
 brew install htop
 brew install iterm2
-brew install jdk
 brew install jq
 brew install less
 brew install m4
 brew install make
 brew install nano
+brew install node
 brew install nmap
+brew install openjdk
 brew install perl
 brew install postgresql
 brew install python
@@ -59,11 +68,10 @@ brew install tmux
 brew install watch
 brew install wdiff
 brew install wget
+brew install yarn
 brew install zsh
 
-brew install vim --with-override-system-vi
-brew install macvim --env-std --with-override-system-vim
-brew link --overwrite macvim
+brew install vim
 
 brew update
 brew upgrade
@@ -76,3 +84,11 @@ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 brew tap amazon/amazon ssh://git.amazon.com/pkg/HomebrewAmazon
 brew update
 brew install mwinit
+
+# setup coc.nvim plugin
+pushd $HOME/.vim/pack/plugins/start/coc
+yarn install
+popd
+
+# tell Finder to show dotfiles. Agh.
+defaults write com.apple.finder AppleShowAllFiles YES
