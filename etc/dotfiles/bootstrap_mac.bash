@@ -5,7 +5,6 @@
 
 brew analytics off
 
-brew tap homebrew/dupes
 brew tap homebrew/cask
 brew tap caskroom/fonts
 
