@@ -51,12 +51,13 @@ brew install gzip
 brew install htop
 brew install iterm2
 brew install jq
+brew install keepassx
 brew install less
 brew install m4
 brew install make
 brew install nano
-brew install node
 brew install nmap
+brew install node
 brew install openjdk
 brew install perl
 brew install postgresql
@@ -64,6 +65,7 @@ brew install python
 brew install python3
 brew install ruby
 brew install screen
+brew install sequel-pro
 brew install tmux
 brew install watch
 brew install wdiff
