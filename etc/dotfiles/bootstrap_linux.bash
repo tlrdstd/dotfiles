@@ -37,8 +37,8 @@ brew install htop
 brew install jq
 brew install ncdu
 brew install node
-brew install openjdk@11
-brew link --force openjdk@11
+brew install openjdk@17
+brew link --force openjdk@17
 brew install perl
 brew install postgresql
 brew install pssh
@@ -49,6 +49,14 @@ brew install tmux
 # sed -i.bak 's/enable-gui=no/enable-gui/' ~/.linuxbrew/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/vim.rb
 brew install vim --with-override-system-vi --with-client-server --with-lua --with-python3 --with-tcl --with-gettext # --enable-gui
 brew install zsh
+
+# TODO: only run this if `/workplace/distyler/openjdk` doesn't exist
+# VS Code is configured to run Java from this location via java.home
+# cd /workplace/distyler
+# mkdir openjdk
+# cd openjdk
+# wget https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jdk_x64_linux_hotspot_11.0.10_9.tar.gz
+# tar xzf OpenJDK11U-jdk_x64_linux_hotspot_11.0.10_9.tar.gz
 
 # brew install xauth
 # https://w.amazon.com/index.php/CloudDeveloperDesktop/UserGuide/GUI
