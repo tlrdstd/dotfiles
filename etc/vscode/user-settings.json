@@ -1,0 +1,292 @@
+{
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "files.watcherExclude": {
+        "**/build/**": true,
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "**/.hg/store/**": true,
+        "**/node_modules/**": true
+    },
+    "files.exclude": {
+        "release-info": true,
+        "src/*/build": false,
+        "build": true,
+        "env": true,
+        "packageInfo*": true,
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/.classpath": true,
+        "**/.factorypath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/*.class": true
+    },
+    "search.exclude": {
+        "env": true,
+        "src/*/build": true,
+        "build": true,
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/logs": true,
+        "**/package-lock.json": true,
+        "src/*/dist": true
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.colorTheme": "Braver's Solarized Dark",
+    "workbench.editor.enablePreview": false,
+    "java.test.log.level": "verbose",
+    "vim.easymotion": true,
+    "vim.surround": true,
+    "vim.camelCaseMotion.enable": true,
+    "vim.leader": "<space>",
+    "vim.useCtrlKeys": true,
+    "vim.debug.loggingLevelForConsole": "debug", // view logs in Help -> Toggle Developer Tools
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "w"],
+            "commands": [
+                ":w"
+            ]
+        },
+        {
+            "before": ["u"],
+            "commands": ["undo"]
+        },
+        {
+            "before": ["<C-r>"],
+            "commands": ["redo"]
+        },
+        // remap text movement to use CamelCaseMotion - https://github.com/VSCodeVim/Vim#camelcasemotion
+        {
+            "before": ["w"],
+            "after": ["leader", "w"]
+        },
+        {
+            "before": ["e"],
+            "after": ["leader", "e"]
+        },
+        {
+            "before": ["b"],
+            "after": ["leader", "b"]
+        },
+        // try to use  to work with c/d commands; not working; don't know why
+        {
+            "before": ["c", "w"],
+            "after": ["c", "i", "leader", "w"]
+        },
+        // insert a new-line when hitting Enter
+        {
+            "before": ["<Enter>"],
+            "after": ["o"]
+        },
+        // remap window navigation commands
+        {
+            "before": ["<C-h>"],
+            "commands": ["workbench.action.navigateLeft"]
+        },
+        {
+            "before": ["<C-l>"],
+            "commands": ["workbench.action.navigateRight"]
+        },
+        {
+            "before": ["<C-k>"],
+            "commands": ["workbench.action.navigateUp"]
+        },
+        {
+            "before": ["<C-j>"],
+            "commands": ["workbench.action.navigateDown"]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+    ],
+    "gitlens.hovers.currentLine.over": "line",
+    "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "terminal.external.osxExec": "iTerm.app",
+
+    // set terminal to Solarized colors
+    "workbench.colorCustomizations": {
+        "terminal.foreground": "#839496",
+        "terminal.background": "#002833",
+        "terminal.ansiBlack": "#003541",
+        "terminal.ansiBlue": "#268bd2",
+        "terminal.ansiCyan": "#2aa198",
+        "terminal.ansiGreen": "#859901",
+        "terminal.ansiMagenta": "#d33682",
+        "terminal.ansiRed": "#dc322f",
+        "terminal.ansiWhite": "#eee8d5",
+        "terminal.ansiYellow": "#b58901",
+        "terminal.ansiBrightBlack": "#586e75",
+        "terminal.ansiBrightBlue": "#839496",
+        "terminal.ansiBrightCyan": "#93a1a1",
+        "terminal.ansiBrightGreen": "#586e75",
+        "terminal.ansiBrightMagenta": "#6c6ec6",
+        "terminal.ansiBrightRed": "#cb4b16",
+        "terminal.ansiBrightWhite": "#fdf6e3",
+        "terminal.ansiBrightYellow": "#657b83",
+        "terminalCursor.foreground": "#839496",
+        "terminalCursor.background": "#003541"
+    },
+    "editor.minimap.enabled": false,
+    "java.checkstyle.configuration": "/local/home/distyler/dotfiles/homedir/shared/config/checkstyle/google_checks.xml",
+    "java.checkstyle.version": "8.25",
+    "files.trimTrailingWhitespace": true,
+    "gitlens.blame.ignoreWhitespace": true,
+    "problems.showCurrentInStatus": true,
+    "files.associations": {
+        "*.json": "jsonc"
+    },
+    "editor.renderFinalNewline": "off",
+    "sonarlint.rules": {
+        "java:S3655": {
+            "level": "off"
+        },
+        "typescript:S4325": {
+            "level": "off"
+        }
+    },
+    "java.semanticHighlighting.enabled": true,
+    "extensions.ignoreRecommendations": false,
+    "gitlens.advanced.telemetry.enabled": false,
+    "gitlens.codeLens.scopesByLanguage": [
+
+        {
+            "language": "ruby",
+            "scopes": [
+                "document"
+            ]
+        },
+        {
+            "language": "azure-pipelines",
+            "scopes": [
+                "document"
+            ]
+        },
+        {
+            "language": "ansible",
+            "scopes": [
+                "document"
+            ]
+        },
+        {
+            "language": "css",
+            "scopes": [
+                "document"
+            ]
+        },
+        {
+            "language": "html",
+            "scopes": [
+                "document"
+            ]
+        },
+        {
+            "language": "json",
+            "scopes": [
+                "document"
+            ]
+        },
+        {
+            "language": "jsonc",
+            "scopes": [
+                "document"
+            ]
+        },
+        {
+            "language": "less",
+            "scopes": [
+                "document"
+            ]
+        },
+        {
+            "language": "postcss",
+            "scopes": [
+                "document"
+            ]
+        },
+        {
+            "language": "python",
+            "symbolScopes": [
+                "!Module"
+            ]
+        },
+        {
+            "language": "scss",
+            "scopes": [
+                "document"
+            ]
+        },
+        {
+            "language": "stylus",
+            "scopes": [
+                "document"
+            ]
+        },
+        {
+            "language": "vue",
+            "scopes": [
+                "document"
+            ]
+        },
+        {
+            "language": "yaml",
+            "scopes": [
+                "document"
+            ]
+        }
+    ],
+    "sonarlint.disableTelemetry": true,
+    "gitlens.statusBar.format": "${author}, ${agoOrDate} • ${message}",
+    "editor.formatOnSaveMode": "modifications",
+    "editor.renameOnType": true,
+    "gitlens.codeLens.scopes": [
+        "document",
+        "containers",
+        "blocks"
+    ],
+    "java.test.config": {
+        "workingDirectory": "${workspaceFolder}/src/${workspaceFolderBasename}",
+    },
+    "debug.onTaskErrors": "debugAnyway",
+    "remote.SSH.showLoginTerminal": true,
+    "java.refactor.renameFromFileExplorer": "preview",
+    "sortLines.filterBlankLines": true,
+    "json.schemas": [],
+    "explorer.confirmDragAndDrop": false,
+    "telemetry.telemetryLevel": "off",
+    "security.workspace.trust.enabled": false,
+    "editor.wordWrap": "on",
+    "editor.suggest.showMethods": true,
+    "editor.suggest.preview": true,
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.snippetSuggestions": "top",
+    "debug.javascript.defaultRuntimeExecutable": {
+
+        "pwa-node": "node"
+    },
+    "[brazilPackageConfig]": {
+        "workbench.editor.languageDetection": false
+    }
+}
