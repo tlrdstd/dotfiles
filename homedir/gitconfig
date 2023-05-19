@@ -1,5 +1,6 @@
 [alias]
   br = branch
+  brm = branch --merged
   ci = commit
   co = checkout
   cp = cherry-pick
@@ -16,6 +17,7 @@
   type = cat-file -t
   unstage = reset HEAD
   dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%ar%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
+  track = checkout -b
 
 [apply]
   whitespace = fix
@@ -77,3 +79,9 @@
 
 [diff "pkgconfig"]
 	xfuncname = [-[:alpha:]]+.*=.*\\{
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
