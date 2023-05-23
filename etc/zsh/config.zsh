@@ -35,3 +35,6 @@ complete -C '/apollo/env/AmazonAwsCli/bin/aws_completer' aws
 
 # enable fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# enable env_parallel so I can run shell functions in parallel
+. `which env_parallel.zsh`
