@@ -1,129 +1,129 @@
 [submodule "homedir/vim/pack/plugins/start/ctrlp.vim"]
 	path = homedir/vim/pack/plugins/start/ctrlp.vim
-	url = git@github.com:ctrlpvim/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule "homedir/vim/pack/plugins/start/nerdtree"]
 	path = homedir/vim/pack/plugins/start/nerdtree
-	url = git@github.com:scrooloose/nerdtree
+	url = https://github.com/scrooloose/nerdtree
 [submodule "homedir/vim/pack/plugins/start/supertab"]
 	path = homedir/vim/pack/plugins/start/supertab
-	url = git@github.com:ervandew/supertab
+	url = https://github.com/ervandew/supertab
 [submodule "homedir/vim/pack/plugins/start/tabular"]
 	path = homedir/vim/pack/plugins/start/tabular
-	url = git@github.com:godlygeek/tabular
+	url = https://github.com/godlygeek/tabular
 [submodule "homedir/vim/pack/plugins/start/vim-airline"]
 	path = homedir/vim/pack/plugins/start/vim-airline
-	url = git@github.com:vim-airline/vim-airline
+	url = https://github.com/vim-airline/vim-airline
 [submodule "homedir/vim/pack/plugins/start/vim-coffee-script"]
 	path = homedir/vim/pack/plugins/start/vim-coffee-script
-	url = git@github.com:kchmck/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script
 [submodule "homedir/vim/pack/plugins/start/vim-colors-solarized"]
 	path = homedir/vim/pack/plugins/start/vim-colors-solarized
-	url = git@github.com:altercation/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized
 [submodule "homedir/vim/pack/plugins/start/vim-cucumber"]
 	path = homedir/vim/pack/plugins/start/vim-cucumber
-	url = git@github.com:tpope/vim-cucumber
+	url = https://github.com/tpope/vim-cucumber
 [submodule "homedir/vim/pack/plugins/start/vim-dispatch"]
 	path = homedir/vim/pack/plugins/start/vim-dispatch
-	url = git@github.com:tpope/vim-dispatch
+	url = https://github.com/tpope/vim-dispatch
 [submodule "homedir/vim/pack/plugins/start/vim-easymotion"]
 	path = homedir/vim/pack/plugins/start/vim-easymotion
-	url = git@github.com:easymotion/vim-easymotion
+	url = https://github.com/easymotion/vim-easymotion
 [submodule "homedir/vim/pack/plugins/start/vim-easyoperator-line"]
 	path = homedir/vim/pack/plugins/start/vim-easyoperator-line
-	url = git@github.com:haya14busa/vim-easyoperator-line
+	url = https://github.com/haya14busa/vim-easyoperator-line
 [submodule "homedir/vim/pack/plugins/start/vim-easyoperator-phrase"]
 	path = homedir/vim/pack/plugins/start/vim-easyoperator-phrase
-	url = git@github.com:haya14busa/vim-easyoperator-phrase
+	url = https://github.com/haya14busa/vim-easyoperator-phrase
 [submodule "homedir/vim/pack/plugins/start/vim-endwise"]
 	path = homedir/vim/pack/plugins/start/vim-endwise
-	url = git@github.com:tpope/vim-endwise
+	url = https://github.com/tpope/vim-endwise
 [submodule "homedir/vim/pack/plugins/start/vim-fugitive"]
 	path = homedir/vim/pack/plugins/start/vim-fugitive
-	url = git@github.com:tpope/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
 [submodule "homedir/vim/pack/plugins/start/vim-haml"]
 	path = homedir/vim/pack/plugins/start/vim-haml
-	url = git@github.com:tpope/vim-haml
+	url = https://github.com/tpope/vim-haml
 [submodule "homedir/vim/pack/plugins/start/vim-markdown"]
 	path = homedir/vim/pack/plugins/start/vim-markdown
-	url = git@github.com:plasticboy/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown
 [submodule "homedir/vim/pack/plugins/start/vim-mkdir"]
 	path = homedir/vim/pack/plugins/start/vim-mkdir
-	url = git@github.com:pbrisbin/vim-mkdir
+	url = https://github.com/pbrisbin/vim-mkdir
 [submodule "homedir/vim/pack/plugins/start/vim-multiple-cursors"]
 	path = homedir/vim/pack/plugins/start/vim-multiple-cursors
-	url = git@github.com:terryma/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors
 [submodule "homedir/vim/pack/plugins/start/vim-over"]
 	path = homedir/vim/pack/plugins/start/vim-over
-	url = git@github.com:osyo-manga/vim-over
+	url = https://github.com/osyo-manga/vim-over
 [submodule "homedir/vim/pack/plugins/start/vim-rails"]
 	path = homedir/vim/pack/plugins/start/vim-rails
-	url = git@github.com:tpope/vim-rails
+	url = https://github.com/tpope/vim-rails
 [submodule "homedir/vim/pack/plugins/start/vim-rake"]
 	path = homedir/vim/pack/plugins/start/vim-rake
-	url = git@github.com:tpope/vim-rake
+	url = https://github.com/tpope/vim-rake
 [submodule "homedir/vim/pack/plugins/start/vim-repeat"]
 	path = homedir/vim/pack/plugins/start/vim-repeat
-	url = git@github.com:tpope/vim-repeat
+	url = https://github.com/tpope/vim-repeat
 [submodule "homedir/vim/pack/plugins/start/vim-rspec"]
 	path = homedir/vim/pack/plugins/start/vim-rspec
-	url = git@github.com:thoughtbot/vim-rspec
+	url = https://github.com/thoughtbot/vim-rspec
 [submodule "homedir/vim/pack/plugins/start/vim-ruby"]
 	path = homedir/vim/pack/plugins/start/vim-ruby
-	url = git@github.com:vim-ruby/vim-ruby
+	url = https://github.com/vim-ruby/vim-ruby
 [submodule "homedir/vim/pack/plugins/start/vim-surround"]
 	path = homedir/vim/pack/plugins/start/vim-surround
-	url = git@github.com:tpope/vim-surround
+	url = https://github.com/tpope/vim-surround
 [submodule "homedir/vim/pack/plugins/start/vim-yankstack"]
 	path = homedir/vim/pack/plugins/start/vim-yankstack
-	url = git@github.com:maxbrunsfeld/vim-yankstack
+	url = https://github.com/maxbrunsfeld/vim-yankstack
 [submodule "homedir/vim/pack/plugins/start/incsearch.vim"]
 	path = homedir/vim/pack/plugins/start/incsearch.vim
-	url = git@github.com:haya14busa/incsearch.vim
+	url = https://github.com/haya14busa/incsearch.vim
 [submodule "homedir/vim/pack/plugins/start/vim-tmux-navigator"]
 	path = homedir/vim/pack/plugins/start/vim-tmux-navigator
-	url = git@github.com:christoomey/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator
 [submodule "homedir/vim/pack/plugins/start/vim-lastplace"]
 	path = homedir/vim/pack/plugins/start/vim-lastplace
-	url = git@github.com:farmergreg/vim-lastplace
+	url = https://github.com/farmergreg/vim-lastplace
 [submodule "homedir/vim/pack/plugins/start/vim-javascript"]
 	path = homedir/vim/pack/plugins/start/vim-javascript
-	url = git@github.com:pangloss/vim-javascript
+	url = https://github.com/pangloss/vim-javascript
 [submodule "homedir/vim/pack/plugins/start/vim-jsx"]
 	path = homedir/vim/pack/plugins/start/vim-jsx
-	url = git@github.com:mxw/vim-jsx
+	url = https://github.com/mxw/vim-jsx
 [submodule "homedir/vim/pack/plugins/start/vim-graphql"]
 	path = homedir/vim/pack/plugins/start/vim-graphql
-	url = git@github.com:jparise/vim-graphql
+	url = https://github.com/jparise/vim-graphql
 [submodule "homedir/powerline/fonts"]
 	path = homedir/powerline/fonts
-	url = git@github.com:powerline/fonts
+	url = https://github.com/powerline/fonts
 [submodule "etc/zsh/oh-my-zsh-custom/plugins/zsh-autosuggestions"]
 	path = etc/zsh/oh-my-zsh-custom/plugins/zsh-autosuggestions
-	url = git@github.com:zsh-users/zsh-autosuggestions.git
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
 [submodule "homedir/vim/pack/plugins/start/vim-airline-themes"]
 	path = homedir/vim/pack/plugins/start/vim-airline-themes
-	url = git@github.com:vim-airline/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
 [submodule "homedir/vim/pack/plugins/start/ctrlsf.vim"]
 	path = homedir/vim/pack/plugins/start/ctrlsf.vim
-	url = git@github.com:dyng/ctrlsf.vim.git
+	url = https://github.com/dyng/ctrlsf.vim.git
 [submodule "etc/zsh/oh-my-zsh"]
 	path = etc/zsh/oh-my-zsh
-	url = git@github.com:robbyrussell/oh-my-zsh.git
+	url = https://github.com/robbyrussell/oh-my-zsh.git
 [submodule "etc/zsh/oh-my-zsh-custom/themes/powerlevel9k"]
 	path = etc/zsh/oh-my-zsh-custom/themes/powerlevel9k
-	url = git@github.com:bhilburn/powerlevel9k
+	url = https://github.com/bhilburn/powerlevel9k
 [submodule "homedir/tmux/plugins/tmux-logging"]
 	path = homedir/tmux/plugins/tmux-logging
-	url = git@github.com:tmux-plugins/tmux-logging
+	url = https://github.com/tmux-plugins/tmux-logging
 [submodule "homedir/tmux/plugins/tpm"]
 	path = homedir/tmux/plugins/tpm
-	url = git@github.com:tmux-plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
 [submodule "homedir/vim/pack/plugins/start/CamelCaseMotion"]
 	path = homedir/vim/pack/plugins/start/CamelCaseMotion
-	url = git@github.com:bkad/CamelCaseMotion
+	url = https://github.com/bkad/CamelCaseMotion
 [submodule "homedir/vim/pack/plugins/start/ale"]
 	path = homedir/vim/pack/plugins/start/ale
-	url = git@github.com:dense-analysis/ale.git
+	url = https://github.com/dense-analysis/ale.git
 [submodule "homedir/vim/pack/plugins/start/coc"]
 	path = homedir/vim/pack/plugins/start/coc
-	url = git@github.com:neoclide/coc.nvim.git
+	url = https://github.com/neoclide/coc.nvim.git
