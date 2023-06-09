@@ -1,6 +1,3 @@
-[submodule "homedir/vim/pack/plugins/start/ctrlp.vim"]
-	path = homedir/vim/pack/plugins/start/ctrlp.vim
-	url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule "homedir/vim/pack/plugins/start/nerdtree"]
 	path = homedir/vim/pack/plugins/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree
@@ -124,6 +121,6 @@
 [submodule "homedir/vim/pack/plugins/start/ale"]
 	path = homedir/vim/pack/plugins/start/ale
 	url = https://github.com/dense-analysis/ale.git
-[submodule "homedir/vim/pack/plugins/start/coc"]
-	path = homedir/vim/pack/plugins/start/coc
-	url = https://github.com/neoclide/coc.nvim.git
+[submodule "homedir/vim/pack/plugins/start/fzf.vim"]
+	path = homedir/vim/pack/plugins/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim

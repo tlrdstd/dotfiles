@@ -17,8 +17,28 @@
 * `etc/dircolors` contains optional `dircolors` configs from `gnome-terminal-colors-solarized`.
 Default in `conf/dircolors` is `ansi-dark`.
 
-# Updating bundled plugins (vim, tmux, zsh)
+# Bundled plugins (vim, tmux, zsh)
+
+Bundled plugins are managed via [`git submodule`](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+
+## Updating bundled plugins
 
 `dotfiles_update` will handle it.
 
 Or targeted: `git submodule update --remote --recursive`
+
+## Installing new bundled plugins
+
+```
+cd to/dotfiles/dir/where/plugin/should/live
+
+git submodule add https://github.com/pluginAuthor/pluginName
+```
+
+## Removing bundled plugins
+
+Submodules can be removed like any other `git`-managed file:
+
+```
+git rm -rf path/to/submodule
+```

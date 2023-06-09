@@ -31,11 +31,11 @@ hi link EasyMotionTarget2Second ErrorMsg
 hi link EasyMotionShade Comment
 
 " ctrlp - fuzzy file matching for opening files
-let g:ctrlp_show_hidden = 1
-let g:ctrlp_max_files   = 0
-let g:ctrlp_max_height  = 25
-let g:ctrlp_use_caching = 0
-let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+" let g:ctrlp_show_hidden = 1
+" let g:ctrlp_max_files   = 0
+" let g:ctrlp_max_height  = 25
+" let g:ctrlp_use_caching = 0
+" let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
 " Solarized color scheme settings for better visibility
 let g:solarized_visibility='low'
@@ -65,7 +65,7 @@ let g:ale_java_checkstyle_config = '~/.config/checkstyle/google_checks.xml'
 call yankstack#setup()
 
 " install coc.nvim plugins on-demand
-let g:coc_global_extensions='coc-java'
+" let g:coc_global_extensions='coc-java'
 
 " Vim configs
 " -----------
@@ -278,8 +278,12 @@ nnoremap <C-Tab> :tabnext<CR>       " next tab (overrides mswin.vim)
 nnoremap <C-S-Tab> :tabprevious<CR> " previous tab
 nmap <C-t> :tabnew<CR>              " new tab
 
-" enable fzf
-set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
+" enable fzf.vim
+" set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
+set rtp+=~/.fzf
+" GFiles invocation only passes git-managed files to fzf.vim
+nnoremap <silent> <C-p> :GFiles<CR>
+
 
 " import user/machine specific tweaks
 if filereadable(expand("~/.vimrc_local"))
