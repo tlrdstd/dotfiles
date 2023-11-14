@@ -5,7 +5,7 @@ fi
 
 # prevent Ctrl-Q from mapping to `stty start`
 # allows <C-Q> to map to <C-V> in Vim
-stty start undef
+# stty start undef
 
 # enable nvm
 # export NVM_DIR="$HOME/.nvm"
