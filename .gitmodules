@@ -124,3 +124,6 @@
 [submodule "homedir/vim/pack/plugins/start/fzf.vim"]
 	path = homedir/vim/pack/plugins/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim
+[submodule "etc/zsh/oh-my-zsh-custom/themes/powerlevel10k"]
+	path = etc/zsh/oh-my-zsh-custom/themes/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k

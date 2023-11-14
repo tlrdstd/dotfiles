@@ -17,7 +17,7 @@ DISABLE_AUTO_UPDATE=true
 
 # configure my custom zsh theme before activating it
 source ${DOTFILES}/etc/zsh/theme.zsh
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -93,6 +93,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#
-# Strip username@computer from ZSH prompt
-export DEFAULT_USER=$USER
