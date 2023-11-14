@@ -39,6 +39,8 @@ hi link EasyMotionShade Comment
 
 " Solarized color scheme settings for better visibility
 let g:solarized_visibility='low'
+" disable the transparent Solarized background that looks terrible in iTerm2
+let g:solarized_termtrans=1
 colorscheme solarized
 
 " Airline status bar - make it look better
