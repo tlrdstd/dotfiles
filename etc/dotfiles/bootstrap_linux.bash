@@ -78,8 +78,8 @@ nvm install v8.12.0
 
 mkdir -pv ~/.local/share/fonts
 for type in Bold Light Medium Regular Retina; do
-  wget -O ~/.local/share/fonts/FiraCode-${type}.ttf \
-  "https://github.com/tonsky/FiraCode/blob/master/distr/ttf/FiraCode-${type}.ttf?raw=true";
+  wget -O ~/.local/share/fonts/FiraCodeNerdFont-${type}.ttf \
+  "https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/${type}/FiraCodeNerdFont-${type}.ttf?raw=true"
 done
 fc-cache --verbose -f ~/.local/share/fonts
 
